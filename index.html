@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/288fb4c6b2.js" crossorigin="anonymous"></script>
+    <title>KYOBO교보문고</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1><img src="img/logo.png" alt="교보문고"></h1>
+            <div class="search">
+                <select name="serch_op" id="serch_op">
+                    <option value="">통합검색</option>
+                    <option value="">교보문고</option>
+                    <option value="">eBook</option>
+                    <option value="">sam</option>
+                    <option value="">핫트랙스</option>
+                </select>
+                <input type="text" placeholder="경영상가 마지막 작품">
+                <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="customer">
+                <a href="#"><img src="img/cart.png" alt="카트"></a>
+                <a href="#"><img src="img/customer.png" alt="마이페이지"></a>
+            </div>
+        </div>
+        <nav>
+            <div id="gnb">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="#">X 팩앤폴드</a><span>ㆍ</span></li>
+                    <li><a href="#">베스트</a><span>ㆍ</span></li>
+                    <li><a href="#">신상품</a><span>ㆍ</span></li>
+                    <li><a href="#">이벤트</a><span>ㆍ</span></li>
+                    <li><a href="#">사은품</a><span>ㆍ</span></li>
+                    <li><a href="#">PICK</a><span>ㆍ</span></li>
+                    <li><a href="#">교보ONLY </a><span>ㆍ</span></li>
+                    <li><a href="#">CASTing</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">할인혜택</a><span>ㆍ</span></li>
+                    <li><a href="#">출석체크</a></li>
+                </ul>
+                <div id="lnb">
+                    <ul class="lnb_title">
+                        <li>카테고리 전체보기</li>
+                        <li>서비스 전체보기</li>
+                    </ul>
+                    <div class="lnb1">
+                        <ul class="lnb1_gnb">
+                            <li>교보문고</li>
+                            <li>핫트랙스</li>
+                        </ul>
+                        <div class="lnb1-1">
+                            <ul class="snb">
+                                <li>교보문고</li>
+                                <li>서양도서</li>
+                                <li>일본도서</li>
+                                <li>교보Only</li>
+                            </ul>
+                            <div class="content">
+                                <ul class="snb1-1"><!--교보문고-->
+                                    <li>
+                                        <h5><a href="#">국내도서 전체 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                            <li><a href="#">건강 <span>+</span></a></li>
+                                            <li><a href="#">취미/실용/스포츠 <span>+</span></a></li>
+                                            <li><a href="#">경제/경영 <span>+</span></a></li>
+                                            <li><a href="#">자기계발 <span>+</span></a></li>
+                                            <li><a href="#">정치/사회 <span>+</span></a></li>
+                                            <li><a href="#">역사/문화 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">종교 <span>+</span></a></li>
+                                            <li><a href="#">예술/대중문화 <span>+</span></a></li>
+                                            <li><a href="#">중/고등참고서 <span>+</span></a></li>
+                                            <li><a href="#">기술/공학 <span>+</span></a></li>
+                                            <li><a href="#">외국어 <span>+</span></a></li>
+                                            <li><a href="#">과학 <span>+</span></a></li>
+                                            <li><a href="#">취업/수험서 <span>+</span></a></li>
+                                            <li><a href="#">여행 <span>+</span></a></li>
+                                            <li><a href="#">컴퓨터/IT <span>+</span></a></li>
+                                            <li><a href="#">잡지 <span>+</span></a></li>
+                                            <li><a href="#">청소년 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">초등참고서 <span>+</span></a></li>
+                                            <li><a href="#">유아(0~7세) <span>+</span></a></li>
+                                            <li><a href="#">어린이(초등) <span>+</span></a></li>
+                                            <li><a href="#">만화 <span>+</span></a></li>
+                                            <li><a href="#">대학교재 <span>+</span></a></li>
+                                            <li><a href="#">한국소개도서 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>스페셜 코너</h5>
+                                        <ul>
+                                            <li><a href="#">오늘의 선택 </a></li>
+                                            <li><a href="#">추천 </a></li>
+                                            <li><a href="#">선물하기 </a></li>
+                                            <li><a href="#">분철서비스 </a></li>
+                                            <li><a href="#">특가 </a></li>
+                                            <li><a href="#">정가인하 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="snb1-2">
+                                    <li>
+                                        <h5><a href="#">서양도서 전체 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                            <li><a href="#">건강 <span>+</span></a></li>
+                                            <li><a href="#">취미/실용/스포츠 <span>+</span></a></li>
+                                            <li><a href="#">경제/경영 <span>+</span></a></li>
+                                            <li><a href="#">자기계발 <span>+</span></a></li>
+                                            <li><a href="#">정치/사회 <span>+</span></a></li>
+                                            <li><a href="#">역사/문화 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">종교 <span>+</span></a></li>
+                                            <li><a href="#">예술/대중문화 <span>+</span></a></li>
+                                            <li><a href="#">중/고등참고서 <span>+</span></a></li>
+                                            <li><a href="#">기술/공학 <span>+</span></a></li>
+                                            <li><a href="#">외국어 <span>+</span></a></li>
+                                            <li><a href="#">과학 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>스페셜 코너</h5>
+                                        <ul>
+                                            <li><a href="#">오늘의 선택 </a></li>
+                                            <li><a href="#">수준별 원서읽기 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="snb1-3">
+                                    <li>
+                                        <h5><a href="#">일본도서 전체 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                            <li><a href="#">건강 <span>+</span></a></li>
+                                            <li><a href="#">취미/실용/스포츠 <span>+</span></a></li>
+                                            <li><a href="#">경제/경영 <span>+</span></a></li>
+                                            <li><a href="#">자기계발 <span>+</span></a></li>
+                                            <li><a href="#">정치/사회 <span>+</span></a></li>
+                                            <li><a href="#">역사/문화 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">종교 <span>+</span></a></li>
+                                            <li><a href="#">예술/대중문화 <span>+</span></a></li>
+                                            <li><a href="#">중/고등참고서 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5><a href="#">스페셜 코너 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">오늘의 선택 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="snb1-4">
+                                    <li>
+                                        <h5><a href="#">교보Only 전체 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5><a href="#">스페셜 코너 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">책 그리고 꽃 </a></li>
+                                            <li><a href="#">문화공간 </a></li>
+                                            <li><a href="#">교보문고 기프트카드 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><!--content-->
+                            <div class="ad">
+                                <img src="img/ad.png" alt="문해력의 원조, EBS 문해력 시리즈(책광고)">
+                            </div>
+                            <div class="fnb">
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon1" alt="오늘의 선택">
+                                        <p>오늘의 선택</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon2" alt="책 그리고 꽃">
+                                        <p>책 그리고 꽃</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon3" alt="인물&작품">
+                                        <p>인물&작품</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon4" alt="선물하기">
+                                        <p>선물하기</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon5" alt="통합리뷰">
+                                        <p>통합리뷰</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon6" alt="손글씨캠페인">
+                                        <p>손글씨캠페인</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon7" alt="문화공간">
+                                        <p>문화공간</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/ico8" alt="POD">
+                                        <p>POD</p>
+                                    </a>
+                                </div>
+                            </div><!--fnd-->
+                        </div><!--lnb1-1-->
+                        <div class="lnb1-2">
+                            <ul class="snb">
+                                <li>디자인문구</li>
+                                <li>디지털/자동차</li>
+                                <li>필기구</li>
+                                <li>오피스</li>
+                            </ul>
+                            <div class="content">
+                                <ul class="snb1-1">
+                                    <li>
+                                        <h5><a href="#">디자인문구 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                            <li><a href="#">건강 <span>+</span></a></li>
+                                            <li><a href="#">취미/실용/스포츠 <span>+</span></a></li>
+                                            <li><a href="#">경제/경영 <span>+</span></a></li>
+                                            <li><a href="#">자기계발 <span>+</span></a></li>
+                                            <li><a href="#">정치/사회 <span>+</span></a></li>
+                                            <li><a href="#">역사/문화 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">종교 <span>+</span></a></li>
+                                            <li><a href="#">예술/대중문화 <span>+</span></a></li>
+                                            <li><a href="#">중/고등참고서 <span>+</span></a></li>
+                                            <li><a href="#">기술/공학 <span>+</span></a></li>
+                                            <li><a href="#">외국어 <span>+</span></a></li>
+                                            <li><a href="#">과학 <span>+</span></a></li>
+                                            <li><a href="#">취업/수험서 <span>+</span></a></li>
+                                            <li><a href="#">여행 <span>+</span></a></li>
+                                            <li><a href="#">컴퓨터/IT <span>+</span></a></li>
+                                            <li><a href="#">잡지 <span>+</span></a></li>
+                                            <li><a href="#">청소년 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">초등참고서 <span>+</span></a></li>
+                                            <li><a href="#">유아(0~7세) <span>+</span></a></li>
+                                            <li><a href="#">어린이(초등) <span>+</span></a></li>
+                                            <li><a href="#">만화 <span>+</span></a></li>
+                                            <li><a href="#">대학교재 <span>+</span></a></li>
+                                            <li><a href="#">한국소개도서 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>스페셜 코너</h5>
+                                        <ul>
+                                            <li><a href="#">오늘의 선택 </a></li>
+                                            <li><a href="#">추천 </a></li>
+                                            <li><a href="#">선물하기 </a></li>
+                                            <li><a href="#">분철서비스 </a></li>
+                                            <li><a href="#">특가 </a></li>
+                                            <li><a href="#">정가인하 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="snb1-2">
+                                    <li>
+                                        <h5><a href="#">서양도서 전체 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                            <li><a href="#">건강 <span>+</span></a></li>
+                                            <li><a href="#">취미/실용/스포츠 <span>+</span></a></li>
+                                            <li><a href="#">경제/경영 <span>+</span></a></li>
+                                            <li><a href="#">자기계발 <span>+</span></a></li>
+                                            <li><a href="#">정치/사회 <span>+</span></a></li>
+                                            <li><a href="#">역사/문화 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">종교 <span>+</span></a></li>
+                                            <li><a href="#">예술/대중문화 <span>+</span></a></li>
+                                            <li><a href="#">중/고등참고서 <span>+</span></a></li>
+                                            <li><a href="#">기술/공학 <span>+</span></a></li>
+                                            <li><a href="#">외국어 <span>+</span></a></li>
+                                            <li><a href="#">과학 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>스페셜 코너</h5>
+                                        <ul>
+                                            <li><a href="#">오늘의 선택 </a></li>
+                                            <li><a href="#">수준별 원서읽기 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="snb1-3">
+                                    <li>
+                                        <h5><a href="#">일본도서 전체 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                            <li><a href="#">건강 <span>+</span></a></li>
+                                            <li><a href="#">취미/실용/스포츠 <span>+</span></a></li>
+                                            <li><a href="#">경제/경영 <span>+</span></a></li>
+                                            <li><a href="#">자기계발 <span>+</span></a></li>
+                                            <li><a href="#">정치/사회 <span>+</span></a></li>
+                                            <li><a href="#">역사/문화 <span>+</span></a></li>
+                                            <!--  -->
+                                            <li><a href="#">종교 <span>+</span></a></li>
+                                            <li><a href="#">예술/대중문화 <span>+</span></a></li>
+                                            <li><a href="#">중/고등참고서 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5><a href="#">스페셜 코너 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">오늘의 선택 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="snb1-4">
+                                    <li>
+                                        <h5><a href="#">교보Only 전체 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">소설 <span>+</span></a></li>
+                                            <li><a href="#">시/에세이 <span>+</span></a></li>
+                                            <li><a href="#">인문 <span>+</span></a></li>
+                                            <li><a href="#">가정/육아 <span>+</span></a></li>
+                                            <li><a href="#">요리 <span>+</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5><a href="#">스페셜 코너 <span>></span></a></h5>
+                                        <ul>
+                                            <li><a href="#">책 그리고 꽃 </a></li>
+                                            <li><a href="#">문화공간 </a></li>
+                                            <li><a href="#">교보문고 기프트카드 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><!--content-->
+                            <div class="fnb">
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon1" alt="오늘의 선택">
+                                        <p>오늘의 선택</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon2" alt="책 그리고 꽃">
+                                        <p>책 그리고 꽃</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon3" alt="인물&작품">
+                                        <p>인물&작품</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon4" alt="선물하기">
+                                        <p>선물하기</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon5" alt="통합리뷰">
+                                        <p>통합리뷰</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon6" alt="손글씨캠페인">
+                                        <p>손글씨캠페인</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/icon7" alt="문화공간">
+                                        <p>문화공간</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="img/ico8" alt="POD">
+                                        <p>POD</p>
+                                    </a>
+                                </div>
+                            </div><!--fnd-->
+                        </div><!--lnb1-2-->
+                    </div>
+                    <div class="lnb2">
+                        <ul>
+                            <li>
+                                <h5><a href="#">주요서비스</a></h5>
+                                <ul>
+                                    <li><a href="#">종합베스트셀러</a></li>
+                                    <li><a href="#">스테디셀러</a></li>
+                                    <li><a href="#">신상품</a></li>
+                                    <li><a href="#">사은품</a></li>
+                                    <li><a href="#">특가</a></li>
+                                    <li><a href="#">정가인하</a></li>
+                                    <li><a href="#">인물&작품</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                    <li><a href="#">추천</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><a href="#">웹소설 톡소다</a></h5>
+                                <ul>
+                                    <li><a href="#">웹소설</a></li>
+                                    <li><a href="#">웹툰</a></li>
+                                    <li><a href="#">자유연재</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><a href="#">회원혜택</a></h5>
+                                <ul>
+                                    <li><a href="#">교보북클럽</a></li>
+                                    <li><a href="#">등급별 혜택</a></li>
+                                    <li><a href="#">신규회원혜택</a></li>
+                                    <li><a href="#">Prestige Lounge</a></li>
+                                    <li><a href="#">제휴포인트상품권</a></li>
+                                    <li><a href="#">참좋은교보문고</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><a href="#">협력사여러분</a></h5>
+                                <ul>
+                                    <li><a href="#">협력사여러분</a></li>
+                                    <li><a href="#">제휴/제안</a></li>
+                                    <li><a href="#">애드북</a></li>
+                                    <li><a href="#">협력사네트워크</a></li>
+                                    <li><a href="#">CP관리시스템</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><a href="#">이벤트/혜택</a></h5>
+                                <ul>
+                                    <li><a href="#">출석체크</a></li>
+                                    <li><a href="#">이벤트당첨자</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><a href="#">핫트랙스</a></h5>
+                                <ul>
+                                    <li><a href="#">오늘만특가</a></li>
+                                    <li><a href="#">베스트</a></li>
+                                    <li><a href="#">핫딜특가</a></li>
+                                    <li><a href="#">쿠폰/혜택</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><a href="#">고객센터</a></h5>
+                                <ul>
+                                    <li><a href="#">자주묻는질문</a></li>
+                                    <li><a href="#">1:1문의</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">전화상담 안내도</a></li>
+                                    <li><a href="#">법인회원 대량주문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><a href="#">기타</a></h5>
+                                <ul>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">청소년보호정책</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+    </header>
+    <div id="contain">
+        <div class="visual">
+            <ul class="slider">
+                <li>
+                    <h1>책 사랑꾼을 위한 준비한<br>
+                        2월의 선물 X 피플&북 에코백</h1>
+                    <img src="img/visual1.jpg" alt="책 사랑꾼을 위한 준비한 2월의 선물 X 피플&북 에코백">
+                </li>
+                <li>
+                    <h1>흔들리는 리더에게 필요한<br>
+                        아들러의 6가지 가르침</h1>
+                    <img src="img/visual2.jpg" alt="흔들리는 리더에게 필요한 아들러의 6가지 가르침">
+                </li>
+                <li>
+                    <h1>tvN유퀴즈 '배우 이성민이 던지는 위로'</h1>
+                    <img src="img/visual3.jpg" alt="tvN유퀴즈 '배우 이성민이 던지는 위로'">
+                </li>
+                <li>
+                    <h1>아직 안 읽었다면? 지금 도전!<br>
+                        이달의 벽돌책 『사피엔스』</h1>
+                    <img src="img/visual4.jpg" alt="아직 안 읽었다면? 지금 도전! 이달의 벽돌책 『사피엔스』">
+                </li>
+                <li>
+                    <h1>매월 1일~7일 교보e캐시 충전 시<br>
+                        최대 20% 추가적립</h1>
+                    <img src="img/visual5.jpg" alt="매월 1일~7일 교보e캐시 충전 시 최대 20% 추가적립">
+                </li>
+                <li>
+                    <h1>sam X 위즈덤하우스 오디오북<br>
+                        2월 특별 기획전</h1>
+                    <img src="img/visual6.jpg" alt="sam X 위즈덤하우스 오디오북">
+                </li>
+                <li>
+                    <h1>델리 신학기 브랜드전<br>
+                        단독 최저가! ~60%</h1>
+                    <img src="img/visual7.jpg" alt="델리 신학기 브랜드전 단독 최저가! ~60%">
+                </li>
+                <li>
+                    <h1>매일매일 인기 웹툰<br>
+                        깜짝 3,000 e캐시!</h1>
+                    <img src="img/visual8.jpg" alt="매일매일 인기 웹툰 깜짝 3,000 e캐시!">
+                </li>
+            </ul>
+            <div class="visual_ad">
+                <img src="img/ho.jpg" alt="김호영">
+                <div>
+                    <span>랜선팬싸</span>
+                    <p>2023 끌어올려! 뮤지컬 배우 김호영과의 만남</p>
+                    <span>by 교보문고</span>
+                </div>
+            </div>
+            <ul class="visual_nav">
+                <li>핫 이슈</li>
+                <li>요즘 이 책</li>
+                <li>새로나온 책</li>
+                <li>기획전</li>
+                <li>eBook</li>
+                <li>sam</li>
+                <li>핫트랙스</li>
+                <li>톡소다</li>
+                <li class="prev_btn">전</li>
+                <li class="next_btn">후</li>
+                <li class="even_btn">메뉴</li>
+            </ul>
+            <div class="visual_pop">
+                <p>X</p>
+                <div>
+                    <img src="img/visual_pop1.jpg" alt="">
+                    <img src="img/visual_pop2.jpg" alt="">
+                    <img src="img/visual_pop3.jpg" alt="">
+                    <img src="img/visual_pop4.jpg" alt="">
+                    <img src="img/visual_pop5.jpg" alt="">
+                    <img src="img/visual_pop6.jpg" alt="">
+                    <img src="img/visual_pop7.jpg" alt="">
+                    <img src="img/visual_pop8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="icon">
+            <div></div>
+        </section>
+    </div>
+    <footer>
+        <div>
+            <h1><img src="img/logo.png" alt="교보문고"></h1>
+            <ul class="fnb">
+                <li><a href="#">회사소개</a><span>|</span></li>
+                <li><a href="#">이용약관</a><span>|</span></li>
+                <li><a href="#">개인정보처리방침</a><span>|</span></li>
+                <li><a href="#">청소년보호정책</a><span>|</span></li>
+                <li><a href="#">대량주문안내</a><span>|</span></li>
+                <li><a href="#">협력사여러분</a><span>|</span></li>
+                <li><a href="#">채용정보</a><span>|</span></li>
+                <li><a href="#">광고소개</a></li>
+            </ul>
+            <div class="company">
+                <p>대표이사:안병현<span>|</span></p>
+                <p>서울특별시 종로구 종로1<span>|</span></p>
+                <p>사업자등록번호:102-81-11670</p><br>
+                <p>대표전화:1544-1900(발신자 부담전화)<span>|</span></p>
+                <p>FAX:0502-987-5711(지역번호 공통)<span>|</span></p>
+                <p>서울특별시 통신판매업신고번호:제 653호 <button>사업자정보확인 <b>></b></button></p>
+            </div>
+            <p class="copy">© KYOBO BOOK CENTRE</p>
+        </div>
+        <div>
+            <select name="familysite" id="familysite">
+                <option value="Family Site">Family Site</option>
+                <option value="교보생명">교보생명</option>
+                <option value="교보증권">교보증권</option>
+                <option value="교보정보통신">교보정보통신</option>
+                <option value="교보리얼코">교보리얼코</option>
+                <option value="교보악사자산운용">교보악사자산운용</option>
+            </select>
+            <ul class="icon">
+                <li><a href="#"><img src="img/youtube.png" alt="유튜브바로가기"></a></li>
+                <li><a href="#"><img src="img/facebook.png" alt="페이스븍바로가기"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="인스타그램바로가기"></a></li>
+            </ul>
+            <div>
+                <p>LG U+ 구매안전서비스 <button>서비스 가입 확인<b>></b></button></p>
+                <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한<br>
+                    LG유플러스의 구매안전서비스를 이용하실 수 있습니다.</p>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/isms.png" alt="isms확인">
+                    <p>정보보호관리체계<br>
+                        ISMS 인증획득
+                    </p>
+                </a>
+                <p>[인증범위] 온라인 교보문고 서비스 운영<br>
+                [유효기간] 2020.11.04 ~ 2023.11.03</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
