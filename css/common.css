@@ -274,6 +274,64 @@ header > nav > #gnb > #lnb {
 #contain > section button:hover span {
   border-bottom: 1px solid black;
 }
+#contain > section .content_box {
+  position: relative;
+}
+#contain > section .content_box .btn {
+  width: 1350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+#contain > section .content_box .btn p {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  position: relative;
+}
+#contain > section .content_box .btn p i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#contain > section .section_menu {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+}
+#contain > section .section_menu h2 {
+  font-size: 30px;
+  float: left;
+}
+#contain > section .section_menu ul li {
+  font-size: 15px;
+  color: #767676;
+  position: relative;
+  line-height: 40px;
+  float: left;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#contain > section .section_menu ul li:nth-of-type(1) {
+  color: #5055b1;
+  font-weight: bold;
+}
+#contain > section .section_menu ul span {
+  position: absolute;
+  display: block;
+  transform: translateX(-50%);
+  left: 50%;
+  background: #6db329;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
 #contain section.icon {
   height: 150px;
   display: flex;
@@ -291,203 +349,180 @@ header > nav > #gnb > #lnb {
   color: #595959;
   font-weight: 600;
 }
-#contain section.today .today_menu {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 30px;
+#contain section.today {
+  margin-top: 30px;
 }
-#contain section.today .today_menu h2 {
-  font-size: 30px;
-  float: left;
-}
-#contain section.today .today_menu ul li {
-  font-size: 15px;
-  color: #767676;
-  position: relative;
-  line-height: 40px;
-  float: left;
-  cursor: pointer;
-  margin-left: 30px;
-}
-#contain section.today .today_menu ul li:nth-of-type(1) {
-  color: #5055b1;
-  font-weight: bold;
-}
-#contain section.today .today_content {
-  position: relative;
-}
-#contain section.today .today_content .btn {
-  width: 1350px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: space-between;
-}
-#contain section.today .today_content .btn p {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ddd;
-  border-radius: 100%;
-  position: relative;
-}
-#contain section.today .today_content .btn p i {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-#contain section.today .today_content .content {
+#contain section.today .content {
   width: 100%;
   height: 310px;
   font-size: 14px;
 }
-#contain section.today .today_content .content .detail {
+#contain section.today .content > li:not(:nth-of-type(1)) {
+  display: none;
+}
+#contain section.today .content .detail {
   width: 650px;
   background-color: gold;
   float: left;
 }
-#contain section.today .today_content .content .detail > li:not(:nth-of-type(1)) {
+#contain section.today .content .detail > li:not(:nth-of-type(1)) {
   display: none;
 }
-#contain section.today .today_content .content .detail > li {
+#contain section.today .content .detail > li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-#contain section.today .today_content .content .detail > li div:nth-of-type(1) {
+#contain section.today .content .detail > li div:nth-of-type(1) {
   width: 200px;
   height: 310px;
   background: skyblue;
   box-shadow: 5px 5px 10px #bfbfbf;
 }
-#contain section.today .today_content .content .detail > li div:nth-of-type(2) {
+#contain section.today .content .detail > li div:nth-of-type(2) {
   background: skyblue;
   width: 420px;
 }
-#contain section.today .today_content .content .detail > li div:nth-of-type(2) h3 {
+#contain section.today .content .detail > li div:nth-of-type(2) h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-#contain section.today .today_content .content .detail > li div:nth-of-type(2) p:not(:nth-of-type(2)) {
+#contain section.today .content .detail > li div:nth-of-type(2) p:not(:nth-of-type(2)) {
   color: #595959;
 }
-#contain section.today .today_content .content .detail > li div:nth-of-type(2) p:nth-of-type(2) {
+#contain section.today .content .detail > li div:nth-of-type(2) p:nth-of-type(2) {
   margin: 20px 0;
 }
-#contain section.today .today_content .content .detail > li div:nth-of-type(2) p:nth-of-type(2) span {
+#contain section.today .content .detail > li div:nth-of-type(2) p:nth-of-type(2) span {
   font-weight: bold;
   color: #6db329;
 }
-#contain section.today .today_content .content .other {
+#contain section.today .content .other {
   background: pink;
   width: 490px;
-  height: 100%;
+  height: 310px;
   float: right;
   padding-top: 30px;
 }
-#contain section.today .today_content .content .other > div {
+#contain section.today .content .other > div {
   width: 100%;
+  height: 100%;
   position: relative;
+  overflow: hidden;
 }
-#contain section.today .today_content .content .other > div ul {
+#contain section.today .content .other > div ul {
   position: absolute;
   width: 500%;
+  height: 100%;
   background: skyblue;
 }
-#contain section.today .today_content .content .other > div ul li {
+#contain section.today .content .other > div ul li {
   float: left;
   margin-right: 20px;
 }
-#contain section.today .today_content .content .other > div ul li div {
+#contain section.today .content .other > div ul li div {
   width: 150px;
   height: 200px;
   background: purple;
 }
 #contain section.ranking {
-  height: 500px;
+  position: relative;
+  height: 580px;
 }
-#contain section.ranking > div {
+#contain section.ranking h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+#contain section.ranking .content > li:not(:nth-of-type(1)) {
+  display: none;
+}
+#contain section.ranking .content {
   width: 100%;
+  overflow: hidden;
 }
-#contain section.ranking > div ul {
-  width: 200%;
+#contain section.ranking .content ul {
+  width: 300%;
 }
-#contain section.ranking > div ul li {
+#contain section.ranking .content ul li {
   float: left;
   margin-right: 40px;
 }
-#contain section.ranking > div ul li div {
+#contain section.ranking .content ul li div {
   width: 270px;
   height: 400px;
   background: gold;
+  margin-bottom: 20px;
 }
-#contain section.ranking > div ul li p:nth-of-type(1) {
+#contain section.ranking .content ul li p:nth-of-type(1) {
   font-size: 13px;
   color: #767676;
 }
-#contain section.ranking > div ul li h3 {
+#contain section.ranking .content ul li h3 {
   font-size: 16px;
+  margin: 5px 0 8px 0;
 }
-#contain section.ranking > div ul li p:nth-of-type(2) {
+#contain section.ranking .content ul li p:nth-of-type(2) {
   font-size: 14px;
   color: #595959;
 }
 #contain section.picks {
-  clear: both;
+  width: 100%;
+  margin: 100px 0;
+  padding: 70px 0;
   height: 500px;
   background: rgba(77, 172, 39, 0.06);
 }
-#contain section.picks > div:nth-of-type(1) {
-  width: 100%;
+#contain section.picks > div {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-#contain section.picks > div:nth-of-type(2) {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(1) {
   width: 300px;
   float: left;
 }
-#contain section.picks > div:nth-of-type(2) span {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(1) span {
   color: #4dac27;
   font-size: 15px;
   font-weight: bold;
 }
-#contain section.picks > div:nth-of-type(2) h3 {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(1) h3 {
   font-size: 24px;
   margin: 10px 0 60px 0;
 }
-#contain section.picks > div:nth-of-type(2) div {
-  width: 300px;
-  padding: 10px;
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(1) div {
+  width: 240px;
+  padding: 15px 10px;
   text-align: center;
   font-size: 16px;
   background: #4dac27;
   border-radius: 5px;
 }
-#contain section.picks > div:nth-of-type(2) div a {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(1) div a {
   color: white;
   font-weight: bold;
 }
-#contain section.picks > div:nth-of-type(3) {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(2) {
   width: 850px;
   float: right;
 }
-#contain section.picks > div:nth-of-type(3) ul {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(2) ul {
   display: flex;
   justify-content: space-between;
 }
-#contain section.picks > div:nth-of-type(3) ul li {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(2) ul li {
   width: 200px;
   overflow: hidden;
 }
-#contain section.picks > div:nth-of-type(3) ul li img {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(2) ul li img {
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-#contain section.picks > div:nth-of-type(3) ul li div {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(2) ul li div {
   text-align: center;
   border: 1px solid #eaeaea;
   background: white;
@@ -496,23 +531,28 @@ header > nav > #gnb > #lnb {
   border-bottom-right-radius: 15px;
   margin-top: -10px;
 }
-#contain section.picks > div:nth-of-type(3) ul li div b {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(2) ul li div b {
   font-size: 14px;
 }
-#contain section.picks > div:nth-of-type(3) ul li div p {
+#contain section.picks > div:nth-of-type(2) > div:nth-of-type(2) ul li div p {
   margin-top: 10px;
   font-size: 13px;
 }
 #contain section.ad2 {
+  clear: both;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 100px auto 100px auto;
 }
 #contain section.ad2 .img_box {
   overflow: hidden;
   border-radius: 10px;
   width: 49.5%;
   height: 180px;
+}
+#contain section.ad1 {
+  margin: 100px auto 100px auto;
 }
 #contain section.ad1 .img_box {
   overflow: hidden;

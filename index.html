@@ -8,9 +8,11 @@
     <script src="https://kit.fontawesome.com/288fb4c6b2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/index_api.js"></script>
     <title>KYOBO교보문고</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
 </head>
 
 <body>
@@ -630,7 +632,7 @@
             </div>
         </div>
         <section class="icon">
-            <div><img src="img/icon1.svg" alt="">
+            <div><img src="img/icon1.svg" alt="할인혜택">
                 <p>할인혜택</p>
             </div>
             <div><img src="img/icon2.svg" alt="Picks">
@@ -668,7 +670,7 @@
             </div>
         </section>
         <section class="today">
-            <div class="today_menu">
+            <div class="section_menu">
                 <h2>오늘의 선택</h2>
                 <ul>
                     <li>전체</li>
@@ -684,102 +686,666 @@
                      <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
-            <div class="today_content">
+            <div class="content_box">
                 <div class="btn">
                     <p class="prev_btn"><i class="fa-solid fa-angle-left"></i></p>
                     <p class="next_btn"><i class="fa-solid fa-chevron-right"></i></p>
                 </div>
-                <div class="all content">
-                    <ul class="detail">
-                        <li>
-                            <div>썸네일</div>
+                <ul class="content">
+                    <li class="content1">
+                        <ul class="detail">
+                            <li>
+                                <div>썸네일1</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일1-2</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일1-3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일1-4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일1-5</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="other">
                             <div>
-                                <h3>제목</h3>
-                                <p>저자</p>
-                                <p>
-                                    <span>세일가</span>
-                                    <b>가격</b>
-                                    원
-                                </p>
-                                <p>내용</p>
+                                <ul>
+                                    <li>
+                                        <div>썸네일1</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일2</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일3</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일4</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일5</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li>
-                            <div>썸네일</div>
-                            <div>
-                                <h3>제목</h3>
-                                <p>저자</p>
-                                <p>
-                                    <span>세일가</span>
-                                    <b>가격</b>
-                                    원
-                                </p>
-                                <p>내용<br>
-                                    내용<br>
-                                    내용<br>
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>썸네일</div>
-                            <div>
-                                <h3>제목</h3>
-                                <p>저자</p>
-                                <p>
-                                    <span>세일가</span>
-                                    <b>가격</b>
-                                    원
-                                </p>
-                                <p>내용<br>
-                                    내용<br>
-                                    내용<br>
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>썸네일</div>
-                            <div>
-                                <h3>제목</h3>
-                                <p>저자</p>
-                                <p>
-                                    <span>세일가</span>
-                                    <b>가격</b>
-                                    원
-                                </p>
-                                <p>내용<br>
-                                    내용<br>
-                                    내용<br>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="other">
-                        <div>
-                            <ul>
-                                <li>
-                                    <div>썸네일</div>
-                                    <h4>저자</h4>
-                                </li>
-                                <li>
-                                    <div>썸네일</div>
-                                    <h4>저자</h4>
-                                </li>
-                                <li>
-                                    <div>썸네일</div>
-                                    <h4>저자</h4>
-                                </li>
-                                <li>
-                                    <div>썸네일</div>
-                                    <h4>저자</h4>
-                                </li>
-                                <li>
-                                    <div>썸네일</div>
-                                    <h4>저자</h4>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    <li class="content2">
+                        <ul class="detail">
+                            <li>
+                                <div>썸네일2</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일2-1</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일2-3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일2-4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="other">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content3">
+                        <ul class="detail">
+                            <li>
+                                <div>썸네일3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일3-2</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일3-3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일3-4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="other">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content4">
+                        <ul class="detail">
+                            <li>
+                                <div>썸네일4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일4-2</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일4-3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일4-4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="other">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content2">
+                        <ul class="detail">
+                            <li>
+                                <div>썸네일2</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일2-1</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일2-3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일2-4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="other">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content3">
+                        <ul class="detail">
+                            <li>
+                                <div>썸네일3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일3-2</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일3-3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일3-4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="other">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content4">
+                        <ul class="detail">
+                            <li>
+                                <div>썸네일4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일4-2</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일4-3</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>썸네일4-4</div>
+                                <div>
+                                    <h3>제목</h3>
+                                    <p>저자</p>
+                                    <p>
+                                        <span>세일가</span>
+                                        <b>가격</b>
+                                        원
+                                    </p>
+                                    <p>내용<br>
+                                        내용<br>
+                                        내용<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="other">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                    <li>
+                                        <div>썸네일</div>
+                                        <h4>저자</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="ad2">
@@ -792,43 +1358,45 @@
         </section>
         <section class="jump ranking">
             <h2>급상승 도서</h2>
-            <div>
-                <ul>
-                    <li>
-                        <div>썸네일</div>
-                        <p>카테고리</p>
-                        <h3>제목</h3>
-                        <p>저자</p>
-                    </li>
-                    <li>
-                        <div>썸네일</div>
-                        <p>카테고리</p>
-                        <h3>제목</h3>
-                        <p>저자</p>
-                    </li>
-                    <li>
-                        <div>썸네일</div>
-                        <p>카테고리</p>
-                        <h3>제목</h3>
-                        <p>저자</p>
-                    </li>
-                    <li>
-                        <div>썸네일</div>
-                        <p>카테고리</p>
-                        <h3>제목</h3>
-                        <p>저자</p>
-                    </li>
-                    <li>
-                        <div>썸네일</div>
-                        <p>카테고리</p>
-                        <h3>제목</h3>
-                        <p>저자</p>
-                    </li>
-                    <li>
-                        <div>썸네일</div>
-                        <p>카테고리</p>
-                        <h3>제목</h3>
-                        <p>저자</p>
+            <div class="content_box">
+                <div class="btn">
+                    <p class="prev_btn"><i class="fa-solid fa-angle-left"></i></p>
+                    <p class="next_btn"><i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+                <ul class="content">
+                    <li class="content1 showshow">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -844,41 +1412,349 @@
                 </button>
             </div>
             <div>
-                <span>발견의 기쁨을 선물합니다.</span>
-                <h3>취향을 분석해 꼭 맞는 책을<br>추천해드릴게요!</h3>
-                <div><a href="#">로그인하고 더 많은 추천 받기</a></div>
+                <div>
+                    <span>발견의 기쁨을 선물합니다.</span>
+                    <h3>취향을 분석해 꼭 맞는 책을<br>추천해드릴게요!</h3>
+                    <div><a href="#">로그인하고 더 많은 추천 받기</a></div>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/picks1.png" alt="">
+                            <div>
+                                <b>종합추천</b>
+                                <p>고객님의 취향을 분석해<br>
+                                    이틀밤낮 고민하여<br>
+                                    고른 책을 확인하세요.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/picks2.png" alt="">
+                            <div>
+                                <b>작가 Picks</b>
+                                <p>픽스를 통해 고객님의<br>선호 작가와 비슷한<br>새로운 작가를 만나보세요!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/picks3.png" alt="">
+                            <div>
+                                <b>내 마음대로 Picks</b>
+                                <p>오늘은<br>내 맘대로 이 책 한 권<br>어때요?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/picks4.png" alt="">
+                            <div>
+                                <b>소울메이트 Picks</b>
+                                <p>고객님과 취향이 비슷한<br>소울메이트들은<br>어떤 책을 읽고 있을까요?</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
+        </section>
+        <section class="hot_issue ranking">
+            <div class="section_menu">
+                <h2>화제의 신상</h2>
                 <ul>
-                    <li>
-                        <img src="img/picks1.png" alt="">
-                        <div>
-                            <b>종합추천</b>
-                            <p>고객님의 취향을 분석해<br>
-                                이틀밤낮 고민하여<br>
-                                고른 책을 확인하세요.</p>
-                        </div>
+                    <li>전체</li>
+                    <li>국내도서</li>
+                    <li>외국도서</li>
+                    <li>eBook</li>
+                    <li>sam</li>
+                    <li>핫트랙스</li>
+                    <li>교보ONLY</li>
+                </ul>
+                <button class="more_btn">
+                    <span>더보기</span>
+                     <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="content_box">
+                <div class="btn">
+                    <p class="prev_btn"><i class="fa-solid fa-angle-left"></i></p>
+                    <p class="next_btn"><i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+                <ul class="content">
+                    <li class="content1 showshow">
+                        <ul>
+                            <li>
+                                <div>썸네일1-</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <img src="img/picks2.png" alt="">
-                        <div>
-                            <b>작가 Picks</b>
-                            <p>픽스를 통해 고객님의<br>선호 작가와 비슷한<br>새로운 작가를 만나보세요!</p>
-                        </div>
+                    <li class="content2">
+                        <ul>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <img src="img/picks3.png" alt="">
-                        <div>
-                            <b>내 마음대로 Picks</b>
-                            <p>오늘은<br>내 맘대로 이 책 한 권<br>어때요?</p>
-                        </div>
+                    <li class="content3">
+                        <ul>
+                            <li>
+                                <div>썸네일3-1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <img src="img/picks4.png" alt="">
-                        <div>
-                            <b>소울메이트 Picks</b>
-                            <p>고객님과 취향이 비슷한<br>소울메이트들은<br>어떤 책을 읽고 있을까요?</p>
-                        </div>
+                    <li class="content4">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content5">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content6">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content7">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -891,6 +1767,506 @@
                 <img src="img/ad2(1).png" alt="JTBC 드라마 사랑의 이해 원작 소설 '사랑도 환전이 되나요?' 한겨레 문학상 수상 작가 이혁진 연애소설 (광고)">
             </div>
         </section>
+        <section class="week ranking">
+            <h2>이 주의 책</h2>
+            <div class="content_box">
+                <div class="btn">
+                    <p class="prev_btn"><i class="fa-solid fa-angle-left"></i></p>
+                    <p class="next_btn"><i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+                <ul class="content">
+                    <li class="content1 showshow">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="best ranking">
+            <div class="section_menu">
+                <h2>베스트</h2>
+                <ul>
+                    <li>전체</li>
+                    <li>국내도서</li>
+                    <li>외국도서</li>
+                    <li>eBook</li>
+                    <li>sam</li>
+                    <li>핫트랙스</li>
+                    <li>교보ONLY</li>
+                </ul>
+                <button class="more_btn">
+                    <span>더보기</span>
+                     <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="content_box">
+                <div class="btn">
+                    <p class="prev_btn"><i class="fa-solid fa-angle-left"></i></p>
+                    <p class="next_btn"><i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+                <ul class="content">
+                    <li class="content1 showshow">
+                        <ul>
+                            <li>
+                                <div>썸네일1-</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content2">
+                        <ul>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content3">
+                        <ul>
+                            <li>
+                                <div>썸네일3-1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content4">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content5">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <section class="ad1">
+            <div class="img_box">
+                <img src="img/ad3.png" alt="그림으로 개념+원리 잡고, 초등 수학 선행까지! 키출판사 그림으로 개념 잡는 초등 키 수학">
+            </div>
+        </section>
+        <section class="best_selling ranking">
+            <div class="section_menu">
+                <h2>가장 잘 팔리는 중고도서</h2>
+                <ul>
+                    <li>전체</li>
+                    <li>소설</li>
+                    <li>인문</li>
+                    <li>경제/경영</li>
+                    <li>어린이</li>
+                </ul>
+                <button class="more_btn">
+                    <span>더보기</span>
+                     <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="content_box">
+                <div class="btn">
+                    <p class="prev_btn"><i class="fa-solid fa-angle-left"></i></p>
+                    <p class="next_btn"><i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+                <ul class="content">
+                    <li class="content1 showshow">
+                        <ul>
+                            <li>
+                                <div>썸네일1-</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일1-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content2">
+                        <ul>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content3">
+                        <ul>
+                            <li>
+                                <div>썸네일3-1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3-6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content4">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content5">
+                        <ul>
+                            <li>
+                                <div>썸네일1</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일2</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일3</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일4</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일5</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                            <li>
+                                <div>썸네일6</div>
+                                <p>카테고리</p>
+                                <h3>제목</h3>
+                                <p>저자</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>    
         <section class="ad1">
             <div class="img_box">
                 <img src="img/ad3.png" alt="그림으로 개념+원리 잡고, 초등 수학 선행까지! 키출판사 그림으로 개념 잡는 초등 키 수학">
