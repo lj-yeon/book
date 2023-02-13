@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
-    
+    //헤더
+    $('#gnb>i').click(function(){
+        $(this).parent().children('#lnb').toggle();        
+    });
+    // $('body').not('header').click(function(){
+    //     $('#gnb').children('#lnb').hide();
+    // });
+
     //비주얼-메인슬라이드
     var a=0;
     function slider(){
@@ -12,7 +19,7 @@ $(document).ready(function(){
         $('.slider li').eq(a).stop().fadeIn(1000);
         $('.visual_nav1 li').eq(a).css({'font-weight':'bold','border-bottom':'2px solid black'}).siblings().css({'font-weight':'normal','border-bottom':'none'});
     };
-    setInterval(slider,3000);
+    setInterval(slider,4000);
 
     //비주얼-네비
     $('.prev_btn').click(function(){
