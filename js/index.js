@@ -62,7 +62,7 @@ $(document).ready(function () {
         console.log(b);
         $(this).parents('section').find('.content>li').eq(b).show().siblings().hide();
         $(this).parents('section').find('.content>li').eq(b).addClass('showshow').siblings().removeClass('showshow')
-        $('.today').find('.content>li').removeClass('showshow')
+        $('.today').find('.content>li').removeClass('showshow');
     });
 
     //모든 랭킹 좌우 버튼//
@@ -82,22 +82,49 @@ $(document).ready(function () {
 
 
 
-    //투데이//
+    //오늘의 선택//
     //좌우버튼
     $('.today .next_btn').click(function () {
-        $('.other ul').animate({ 'margin-left': '-33.3%' }, 350, function () {
+        $('.other ul').animate({ 'margin-left': '-69%' }, 350, function () {
             $(this).children('li').first().appendTo(this);
-            $(this).css("margin-left", "0");
+            $(this).css("margin-left", "-34.5%");
         });
+        $('.content>li:visible .detail>li:nth-of-type(1)').siblings().css({'opacity':'0'});
+        $('.content>li:visible .detail>li:nth-of-type(1)').appendTo('.content>li:visible .detail')
+        $('.content>li:visible .detail>li:nth-of-type(1)').animate({'opacity':'1'},300);
     })
 
     $('.today .prev_btn').click(function () {
         $('.content>li:visible .other').find('li').last().prependTo('.content>li:visible .other ul');
-        $('.other ul').css({ 'margin-left': '-33.3%' });
-        $('.other ul').animate({ "margin-left": "0" }, 350);
+        $('.other ul').css({ 'margin-left': '-69%' });
+        $('.other ul').animate({ "margin-left": "-34.5%" }, 350);
+
+        $('.content>li:visible .detail>li:nth-of-type(1)').siblings().css({'opacity':'0'});
+        $('.content>li:visible .detail>li:nth-last-of-type(1)').prependTo('.content>li:visible .detail');
+        $('.content>li:visible .detail>li:nth-of-type(1)').animate({'opacity':'1'},300);
     })
 
+    //히트//
+    $('.hit li').hover(function (){
+        $(this).find('div').show().after('<span></span>');
+    },function(){
+        $(this).find('div').hide();
+        $(this).find('span').remove();
+    })
+    $('.hit .prev_btn').click(function(){
+        if($('.hit ul li').eq(0)){}
+        $('.hit ul li').last().prependTo('.hit ul');
+        $('.hit ul').css({'margin-left':'-33.333%'});
+        $('.hit ul').animate({'margin-left':'0'});
+    })
+    $('.hit .next_btn').click(function(){
+        $('.hit ul').animate({'margin-left':'-33.333%'},function(){
+            $('.hit ul li').first().appendTo('.hit ul');
+            $('.hit ul').css({'margin-left':'0%'});
+        });
 
+    })
+    
 
 
 
