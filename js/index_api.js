@@ -212,7 +212,7 @@ $(document).ready(function () {
     })
 
         .done(function (msg) {
-            console.log(msg)
+
             var jump1 = $('.jump .content1 li')
             for (var i = 0; i < jump1.length; i++) {
                 $(jump1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
@@ -222,7 +222,7 @@ $(document).ready(function () {
         });
 
 //////화제의 신상//////////////////////////////////////////////////////
-    //1
+    //1-1
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -238,7 +238,7 @@ $(document).ready(function () {
                 $(hot_issue1).eq(i).children('p').html(msg.documents[i].authors);
             }
         });
-    //2
+    //1-2
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -254,7 +254,7 @@ $(document).ready(function () {
                 $(hot_issue2).eq(i).children('p').html(msg.documents[i].authors);
             }
         });
-    //3
+    //1-3
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -270,7 +270,7 @@ $(document).ready(function () {
                 $(hot_issue3).eq(i).children('p').html(msg.documents[i].authors);
             }
         });
-    //4
+    //1-4
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -287,7 +287,7 @@ $(document).ready(function () {
             }
         });
 
-    //5
+    //1-5
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -303,7 +303,7 @@ $(document).ready(function () {
                 $(hot_issue5).eq(i).children('p').html(msg.documents[i].authors);
             }
         });
-    //6
+    //1-6
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -319,7 +319,7 @@ $(document).ready(function () {
                 $(hot_issue6).eq(i).children('p').html(msg.documents[i].authors);
             }
         });
-    //7
+    //1-7
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -336,6 +336,8 @@ $(document).ready(function () {
             }
         });
 
+        
+
 
 
 //////이주의 책///////////////////////////////////////////////////////
@@ -348,7 +350,7 @@ $(document).ready(function () {
     })
 
         .done(function (msg) {
-            console.log(msg)
+
             var week1 = $('.week .content1 li')
             for (var i = 0; i < week1.length; i++) {
                 $(week1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
@@ -472,12 +474,45 @@ $(document).ready(function () {
             }
         });
 
-//////가장 잘 팔리는 중//////////////////////////////////////////////////////
+
+    //2-1
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: { query: "공부" },
+        headers: { Authorization: "KakaoAK 602679a60c7a58cbf3cb9fc730890aaa" }
+    })
+
+        .done(function (msg) {
+            var best2_1 = $('.best .content:nth-of-type(2) .content1 li')
+            for (var i = 0; i < best2_1.length; i++) {
+                $(best2_1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best2_1).eq(i).children('h3').html(msg.documents[i].title);
+                $(best2_1).eq(i).children('p').html(msg.documents[i].authors);
+            }
+        });
+    //2-2
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: { query: "놀자" },
+        headers: { Authorization: "KakaoAK 602679a60c7a58cbf3cb9fc730890aaa" }
+    })
+
+        .done(function (msg) {
+            var best2_2 = $('.best .content:nth-of-type(2) .content2 li')
+            for (var i = 0; i < best2_2.length; i++) {
+                $(best2_2).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best2_2).eq(i).children('h3').html(msg.documents[i].title);
+                $(best2_2).eq(i).children('p').eq(0).html(msg.documents[i].authors);
+            }
+        });
+//////가장 잘 팔리는 중고도서//////////////////////////////////////////////////////
     //1
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
-        data: { query: "소설" },
+        data: { query: "외국" },
         headers: { Authorization: "KakaoAK 602679a60c7a58cbf3cb9fc730890aaa" }
     })
 
@@ -486,7 +521,15 @@ $(document).ready(function () {
             for (var i = 0; i < best_selling1.length; i++) {
                 $(best_selling1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling1).eq(i).children('h3').html(msg.documents[i].title);
-                $(best_selling1).eq(i).children('p').html(msg.documents[i].authors);
+                $(best_selling1).eq(i).children('p').eq(0).html(msg.documents[i].authors);
+
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                console.log(total_pri)
+
+                $(best_selling1).eq(i).children('p').eq(1).html(pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
+                $(best_selling1).eq(i).children('p').eq(2).find('span').html(total_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
             }
         });
     //2
@@ -502,7 +545,14 @@ $(document).ready(function () {
             for (var i = 0; i < best_selling2.length; i++) {
                 $(best_selling2).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling2).eq(i).children('h3').html(msg.documents[i].title);
-                $(best_selling2).eq(i).children('p').html(msg.documents[i].authors);
+                $(best_selling2).eq(i).children('p').eq(0).html(msg.documents[i].authors);
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                console.log(total_pri)
+                
+                $(best_selling2).eq(i).children('p').eq(1).html(pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
+                $(best_selling2).eq(i).children('p').eq(2).find('span').html(total_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
             }
         });
     //3
@@ -518,7 +568,14 @@ $(document).ready(function () {
             for (var i = 0; i < best_selling3.length; i++) {
                 $(best_selling3).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling3).eq(i).children('h3').html(msg.documents[i].title);
-                $(best_selling3).eq(i).children('p').html(msg.documents[i].authors);
+                $(best_selling3).eq(i).children('p').eq(0).html(msg.documents[i].authors);
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                console.log(total_pri)
+                
+                $(best_selling3).eq(i).children('p').eq(1).html(pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
+                $(best_selling3).eq(i).children('p').eq(2).find('span').html(total_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
             }
         });
     //4
@@ -534,7 +591,14 @@ $(document).ready(function () {
             for (var i = 0; i < best_selling4.length; i++) {
                 $(best_selling4).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling4).eq(i).children('h3').html(msg.documents[i].title);
-                $(best_selling4).eq(i).children('p').html(msg.documents[i].authors);
+                $(best_selling4).eq(i).children('p').eq(0).html(msg.documents[i].authors);
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                console.log(total_pri)
+                
+                $(best_selling4).eq(i).children('p').eq(1).html(pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
+                $(best_selling4).eq(i).children('p').eq(2).find('span').html(total_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
             }
         });
 
@@ -550,7 +614,14 @@ $(document).ready(function () {
             for (var i = 0; i < best_selling5.length; i++) {
                 $(best_selling5).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling5).eq(i).children('h3').html(msg.documents[i].title);
-                $(best_selling5).eq(i).children('p').html(msg.documents[i].authors);
+                $(best_selling5).eq(i).children('p').eq(0).html(msg.documents[i].authors);
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                console.log(total_pri)
+                
+                $(best_selling5).eq(i).children('p').eq(1).html(pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
+                $(best_selling5).eq(i).children('p').eq(2).find('span').html(total_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
             }
         });
 
