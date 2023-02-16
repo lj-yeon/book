@@ -397,9 +397,17 @@ header > nav > #gnb > #lnb {
 }
 #contain section.today .content .detail > li div span {
   margin: 20px 0;
+  float: left;
   font-weight: bold;
-  display: block;
   font-size: 16px;
+  color: #6db329;
+  display: block;
+}
+#contain section.today .content .detail > li div p:nth-last-of-type(2) {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
 }
 #contain section.today .content .detail > li div p:nth-last-of-type(1) {
   line-height: 25px;
@@ -427,7 +435,7 @@ header > nav > #gnb > #lnb {
 }
 #contain section.today .content .other > div ul li {
   float: left;
-  margin-right: 20px;
+  margin-right: 19px;
   width: 150px;
 }
 #contain section.today .content .other > div ul li picture {
@@ -442,7 +450,7 @@ header > nav > #gnb > #lnb {
 }
 #contain section.ranking {
   position: relative;
-  height: 580px;
+  height: 500px;
 }
 #contain section.ranking h2 {
   font-size: 30px;
@@ -460,7 +468,7 @@ header > nav > #gnb > #lnb {
 }
 #contain section.ranking .content ul li {
   float: left;
-  margin-right: 38px;
+  margin-right: 35px;
   width: 210px;
 }
 #contain section.ranking .content ul li picture {
@@ -480,13 +488,14 @@ header > nav > #gnb > #lnb {
 }
 #contain section.ranking .content ul li p:nth-of-type(2) {
   font-size: 14px;
-  color: #595959;
+  margin-top: 10px;
+  font-weight: bold;
 }
 #contain section.picks {
   width: 100%;
   margin: 100px 0;
-  padding: 70px 0;
-  height: 500px;
+  padding: 80px 0;
+  height: 550px;
   background: rgba(77, 172, 39, 0.06);
 }
 #contain section.picks > div {
@@ -574,6 +583,7 @@ header > nav > #gnb > #lnb {
 }
 #contain section.hit > div:nth-of-type(1) .more_btn {
   float: left;
+  margin-bottom: 20px;
 }
 #contain section.hit > div:nth-of-type(1) .btn {
   clear: both;
@@ -674,9 +684,11 @@ header > nav > #gnb > #lnb {
 #contain section.best .content ul li:nth-of-type(1) span {
   background: #6db329;
 }
+#contain section.best .content ul li:not(:nth-of-type(5n)) {
+  margin-right: 50px;
+}
 #contain section.best .content ul li {
   float: left;
-  margin-right: 40px;
   width: 200px;
   height: 450px;
 }
@@ -718,6 +730,9 @@ header > nav > #gnb > #lnb {
   color: #696969;
   width: 1200px;
   text-align: right;
+}
+#contain section.best_selling {
+  height: 550px;
 }
 #contain section.best_selling .content ul li p:nth-of-type(2) {
   font-size: 14px;
@@ -771,7 +786,7 @@ header > nav > #gnb > #lnb {
 }
 #contain section.casting > div > div:nth-of-type(1) {
   width: 1200px;
-  margin: 150px 0 30px 0;
+  margin: 175px 0 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -867,8 +882,6 @@ header > nav > #gnb > #lnb {
 }
 #contain section.casting > div > ul li > div:nth-of-type(2) > div.book picture {
   width: 100%;
-  height: 165px;
-  background: gold;
   display: block;
 }
 #contain section.casting > div > ul li > div:nth-of-type(2) > div.book picture img {
@@ -876,7 +889,7 @@ header > nav > #gnb > #lnb {
 }
 #contain section.casting > div > ul li > div:nth-of-type(2) > div.book h3 {
   font-size: 15px;
-  margin: 15px 0 5px 0;
+  margin: 10px 0 5px 0;
 }
 #contain section.casting > div > ul li > div:nth-of-type(2) > div.book p {
   font-size: 13px;
@@ -946,15 +959,47 @@ header > nav > #gnb > #lnb {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.7);
 }
+#contain section.event {
+  width: 1200px;
+  height: 350px;
+}
 #contain section.event > div:nth-last-of-type(1) {
   display: none;
 }
-#contain section.event .img_box ul {
-  width: 300%;
+#contain section.event .swiper {
+  width: 100%;
+  height: 150px;
+  position: relative;
 }
-#contain section.event .img_box ul li {
-  width: 33.3333%;
-  float: left;
+#contain section.event .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contain section.event .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contain section.event .swiper-pagination {
+  color: white;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: 92%;
+  bottom: 10%;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#contain section.event .swiper-pagination span {
+  color: white;
 }
 #contain section.ad2 {
   clear: both;
@@ -1069,7 +1114,7 @@ footer > div:nth-of-type(3) {
   width: 1200px;
   height: 300px;
   margin: 0 auto;
-  padding: 40px 0 50px 0;
+  padding-top: 20px;
 }
 footer > div:nth-of-type(3) li {
   float: left;

@@ -26,8 +26,16 @@ $(document).ready(function () {
                 $(today11).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today11).eq(i).find('h3').html(msg.documents[i].title);
                 $(today11).eq(i).find('p').eq(0).html(msg.documents[i].authors);
-                $(today11).eq(i).find('span').html(msg.documents[i].price+'원');
-                $(today11).eq(i).find('p').eq(1).html(msg.documents[i].contents.substring(0, 200));
+
+
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                var sal=Number(pri/total_pri)
+                console.log(sal)
+                $(today11).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+                $(today11).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
+                $(today11).eq(i).find('p').eq(2).html(msg.documents[i].contents.substring(0, 200));
                 
             }
 
@@ -57,8 +65,14 @@ $(document).ready(function () {
                 $(today22).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today22).eq(i).find('h3').html(msg.documents[i].title);
                 $(today22).eq(i).find('p').eq(0).html(msg.documents[i].authors);
-                $(today22).eq(i).find('span').html(msg.documents[i].price+'원');
-                $(today22).eq(i).find('p').eq(1).html(msg.documents[i].contents.substring(0, 200));
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                var sal=Number(pri/total_pri)
+                console.log(sal)
+                $(today22).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+                $(today22).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
+                $(today22).eq(i).find('p').eq(2).html(msg.documents[i].contents.substring(0, 200));
                 
             }
         });
@@ -84,8 +98,14 @@ $(document).ready(function () {
                 $(today33).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today33).eq(i).find('h3').html(msg.documents[i].title);
                 $(today33).eq(i).find('p').eq(0).html(msg.documents[i].authors);
-                $(today33).eq(i).find('span').html(msg.documents[i].price+'원');
-                $(today33).eq(i).find('p').eq(1).html(msg.documents[i].contents.substring(0, 200));
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                var sal=Number(pri/total_pri)
+                console.log(sal)
+                $(today33).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+                $(today33).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
+                $(today33).eq(i).find('p').eq(2).html(msg.documents[i].contents.substring(0, 200));
                 
             }
         });
@@ -111,8 +131,14 @@ $(document).ready(function () {
                 $(today44).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today44).eq(i).find('h3').html(msg.documents[i].title);
                 $(today44).eq(i).find('p').eq(0).html(msg.documents[i].authors);
-                $(today44).eq(i).find('span').html(msg.documents[i].price+'원');
-                $(today44).eq(i).find('p').eq(1).html(msg.documents[i].contents.substring(0, 200));
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                var sal=Number(pri/total_pri)
+                console.log(sal)
+                $(today44).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+                $(today44).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
+                $(today44).eq(i).find('p').eq(2).html(msg.documents[i].contents.substring(0, 200));
                 
             }
         });
@@ -139,8 +165,14 @@ $(document).ready(function () {
                 $(today55).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today55).eq(i).find('h3').html(msg.documents[i].title);
                 $(today55).eq(i).find('p').eq(0).html(msg.documents[i].authors);
-                $(today55).eq(i).find('span').html(msg.documents[i].price+'원');
-                $(today55).eq(i).find('p').eq(1).html(msg.documents[i].contents.substring(0, 200));
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                var sal=Number(pri/total_pri)
+                console.log(sal)
+                $(today55).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+                $(today55).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
+                $(today55).eq(i).find('p').eq(2).html(msg.documents[i].contents.substring(0, 200));
                 
             }
         });
@@ -166,8 +198,14 @@ $(document).ready(function () {
                 $(today66).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today66).eq(i).find('h3').html(msg.documents[i].title);
                 $(today66).eq(i).find('p').eq(0).html(msg.documents[i].authors);
-                $(today66).eq(i).find('span').html(msg.documents[i].price+'원');
-                $(today66).eq(i).find('p').eq(1).html(msg.documents[i].contents.substring(0, 200));
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                var sal=Number(pri/total_pri)
+                console.log(sal)
+                $(today66).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+                $(today66).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
+                $(today66).eq(i).find('p').eq(2).html(msg.documents[i].contents.substring(0, 200));
                 
             }
         });
@@ -193,8 +231,14 @@ $(document).ready(function () {
                 $(today77).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today77).eq(i).find('h3').html(msg.documents[i].title);
                 $(today77).eq(i).find('p').eq(0).html(msg.documents[i].authors);
-                $(today77).eq(i).find('span').html(msg.documents[i].price+'원');
-                $(today77).eq(i).find('p').eq(1).html(msg.documents[i].contents.substring(0, 200));
+                var pri=msg.documents[i].price;
+                var sal_pri=msg.documents[i].sale_price;
+                var total_pri=pri-sal_pri;
+                var sal=Number(pri/total_pri)
+                console.log(sal)
+                $(today77).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+                $(today77).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
+                $(today77).eq(i).find('p').eq(2).html(msg.documents[i].contents.substring(0, 200));
                 
             }
         });
@@ -355,7 +399,8 @@ $(document).ready(function () {
             for (var i = 0; i < week1.length; i++) {
                 $(week1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(week1).eq(i).children('h3').html('<a href="#">' + msg.documents[i].title + "</a>");
-                $(week1).eq(i).children('p').html(msg.documents[i].authors);
+                $(week1).eq(i).children('p').eq(0).html(msg.documents[i].authors);
+                $(week1).eq(i).children('p').eq(1).html(msg.documents[i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
             }
         });
 
@@ -626,7 +671,7 @@ $(document).ready(function () {
         });
 
 
-
+//////Casting//////////////////////////////////////////////////////
 
 
 

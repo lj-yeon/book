@@ -215,20 +215,24 @@ $(document).ready(function () {
     })
 
     //event//
-
-    function event_slider() {
-        $('.event .img_box:visible ul').animate({'margin-left':'-100%'},700,function(){
-            $(this).css({'margin-left':'0'})
-            $(this).children('li').eq(0).appendTo('.event .img_box ul')
-        })
-
-    };
-    setInterval(event_slider, 4000);
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        autoplay: {
+            delay: 3000,
+          },
+      });
     
     $('.event .section_menu li').click(function(){
         var e_i=$(this).index();
-        $('.event .img_box').eq(e_i).show().siblings('.img_box').hide();
-        // setInterval(event_slider, 4000);
+        $('.event .swiper').eq(e_i).show().siblings('.swiper').hide();
     })
 
 
