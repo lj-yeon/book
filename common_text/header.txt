@@ -1,0 +1,40 @@
+<header>
+        <div>
+            <h1><a href="index.html"><img src="img/logo.png" alt="교보문고"></a></h1>
+            <div class="search">
+                <select name="serch_op" id="serch_op">
+                    <option value="">통합검색</option>
+                    <option value="">교보문고</option>
+                    <option value="">eBook</option>
+                    <option value="">sam</option>
+                    <option value="">핫트랙스</option>
+                </select>
+                <input type="text" placeholder="경영상가 마지막 작품">
+                <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="customer">
+                <a href="#"><img src="img/cart.png" alt="카트"></a>
+                <a href="#"><img src="img/customer.png" alt="마이페이지"></a>
+            </div>
+        </div>
+        <nav>
+            <div id="gnb">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="#">X 팩앤폴드</a><span>ㆍ</span></li>
+                    <li><a href="#">베스트</a><span>ㆍ</span></li>
+                    <li><a href="#">신상품</a><span>ㆍ</span></li>
+                    <li><a href="#">이벤트</a><span>ㆍ</span></li>
+                    <li><a href="#">사은품</a><span>ㆍ</span></li>
+                    <li><a href="#">PICK</a><span>ㆍ</span></li>
+                    <li><a href="#">교보ONLY </a><span>ㆍ</span></li>
+                    <li><a href="#">CASTing</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">할인혜택</a><span>ㆍ</span></li>
+                    <li><a href="#">출석체크</a></li>
+                </ul>
+            </div>
+        </nav>
+</header>

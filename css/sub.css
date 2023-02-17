@@ -1,0 +1,416 @@
+#contain {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#contain > section {
+  width: 1200px;
+  margin: 0 auto;
+}
+#contain .small_nav {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 13px;
+}
+#contain .small_nav > button {
+  float: left;
+  margin-right: 10px;
+}
+#contain .small_nav img {
+  width: 15px;
+}
+#contain .small_nav > ul > li {
+  cursor: pointer;
+  float: left;
+  position: relative;
+}
+#contain .small_nav > ul > li h3 {
+  color: #767676;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+#contain .small_nav > ul > li h3 span {
+  font-size: 5px;
+  color: #cccccc;
+  padding: 0 5px;
+}
+#contain .small_nav > ul > li h3 img {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 3px;
+  border-radius: 100%;
+}
+#contain .small_nav > ul > li div {
+  width: 150px;
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+}
+#contain .small_nav > ul > li div ul li a {
+  color: #636363;
+}
+#contain .small_nav > ul > li div ul li:nth-of-type(1) a {
+  color: #222;
+  font-weight: bold;
+}
+#contain .small_nav > ul > li div ul li:not(:nth-last-of-type(1)) {
+  margin-bottom: 7px;
+}
+#contain > .sub_visual {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#contain > .sub_visual .title {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+#contain > .sub_visual .title h2 {
+  text-align: center;
+  font-size: 28px;
+}
+#contain > .sub_visual .title button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+#contain > .sub_visual .title button img {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contain > .sub_visual .infor {
+  width: 330px;
+}
+#contain > .sub_visual .infor > p:nth-of-type(1) {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#contain > .sub_visual .infor > p:nth-of-type(2) {
+  font-size: 14px;
+  color: #767676;
+  margin-bottom: 20px;
+}
+#contain > .sub_visual .infor > p:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+#contain > .sub_visual .infor > p:nth-of-type(3) img {
+  width: 18px;
+  margin-right: 5px;
+}
+#contain > .sub_visual .infor > p:nth-of-type(3) b {
+  font-size: 14px;
+  margin-right: 10px;
+}
+#contain > .sub_visual .infor > p:nth-of-type(3) span {
+  font-weight: bold;
+}
+#contain > .sub_visual .infor > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+#contain > .sub_visual .infor > div img {
+  width: 18px;
+}
+#contain > .sub_visual .infor > div div {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+#contain > .sub_visual .infor > div div:nth-of-type(1) p:nth-of-type(1) {
+  font-size: 17px;
+  font-weight: bold;
+  color: #4dac27;
+}
+#contain > .sub_visual .infor > div div:nth-of-type(1) img:not(:nth-last-of-type(1)) {
+  margin-right: 3px;
+}
+#contain > .sub_visual .infor > div div:nth-of-type(2) p:nth-of-type(2) {
+  font-size: 15px;
+  font-weight: bold;
+  color: #474c98;
+  border-left: 1px solid #ddd;
+}
+#contain > .sub_visual .infor > div div p:nth-of-type(2) {
+  padding: 5px 0;
+}
+#contain > .sub_visual .infor > div div p:nth-last-of-type(1) {
+  font-size: 13px;
+  color: #767676;
+}
+#contain > .sub_visual .infor > div div p:nth-last-of-type(1) span {
+  color: #222;
+}
+#contain > .sub_visual .img_box {
+  text-align: center;
+  width: 380px;
+  position: relative;
+}
+#contain > .sub_visual .img_box .img_boxy {
+  width: 100%;
+  height: 575px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+#contain > .sub_visual .img_box .img_boxy li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+#contain > .sub_visual .img_box .img_boxy li img, #contain > .sub_visual .img_box .img_boxy li div {
+  width: 100%;
+}
+#contain > .sub_visual .img_box .img_boxy li:not(:nth-of-type(4)) {
+  display: none;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) .a4 {
+  margin-top: 160px;
+  font-size: 13px;
+  width: 184px;
+  height: 260px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding-top: 90px;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) .a4 b {
+  font-size: 16px;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) .a4 p {
+  line-height: 20px;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) > div:nth-last-of-type(1) {
+  width: 30%;
+  margin-left: 20px;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) > div:nth-last-of-type(1) img {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) > p {
+  width: 100%;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) > p:nth-of-type(1) {
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 60px;
+  padding-top: 10px;
+}
+#contain > .sub_visual .img_box .img_boxy li:nth-last-of-type(1) > p:nth-of-type(2) {
+  font-size: 12px;
+  color: #767676;
+  text-align: left;
+  margin: 90px 0 0 30px;
+}
+#contain > .sub_visual .img_box .left_right {
+  position: absolute;
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+#contain > .sub_visual .img_box .left_right button {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+#contain > .sub_visual .img_box .left_right button:nth-of-type(1) {
+  opacity: 0.5;
+}
+#contain > .sub_visual .img_box .img_btn {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 25px;
+}
+#contain > .sub_visual .img_box .img_btn span:nth-of-type(2) {
+  color: #767676;
+}
+#contain > .sub_visual .price {
+  width: 330px;
+}
+#contain > .sub_visual .price .bage_box p {
+  font-size: 12px;
+  display: inline-block;
+  padding: 3px;
+  border: 1px solid #ddd;
+  color: #767676;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#contain > .sub_visual .price .bage_box p.choice {
+  border-color: #474c98;
+  color: #474c98;
+}
+#contain > .sub_visual .price table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+#contain > .sub_visual .price table tr {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+#contain > .sub_visual .price table tr th {
+  text-align: left;
+  width: 100px;
+}
+#contain > .sub_visual .price table tr td {
+  padding: 20px 0;
+}
+#contain > .sub_visual .price table tr:not(:nth-of-type(1), :nth-last-of-type(1)) td:nth-last-of-type(1) {
+  text-align: right;
+}
+#contain > .sub_visual .price table tr:nth-of-type(1) span {
+  text-align: left;
+  margin-right: 5px;
+  font-size: 24px;
+  display: inline;
+  vertical-align: baseline;
+}
+#contain > .sub_visual .price table tr:nth-of-type(1) span:nth-of-type(1) {
+  color: #4dac27;
+  font-weight: bold;
+}
+#contain > .sub_visual .price table tr:nth-of-type(1) span:nth-of-type(2) {
+  color: #222;
+  font-weight: bold;
+}
+#contain > .sub_visual .price table tr:nth-of-type(1) span:nth-of-type(3) {
+  font-size: 14px;
+  color: #767676;
+  text-decoration: line-through;
+}
+#contain > .sub_visual .price table tr:nth-of-type(2) button {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+}
+#contain > .sub_visual .price table tr:nth-of-type(2) button img {
+  width: 100%;
+}
+#contain > .sub_visual .price table tr:nth-of-type(3) {
+  border: none;
+}
+#contain > .sub_visual .price table tr:nth-of-type(3) th {
+  vertical-align: top;
+  padding-top: 20px;
+}
+#contain > .sub_visual .price table tr:nth-of-type(3) button {
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+}
+#contain > .sub_visual .price table tr:nth-of-type(3) button img {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+#contain > .sub_visual .price table tr:nth-of-type(4) {
+  border: none;
+}
+#contain > .sub_visual .price table tr:nth-of-type(4) td {
+  padding: 0;
+  font-weight: bold;
+}
+#contain > .sub_visual .price table tr:nth-of-type(4) button {
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+}
+#contain > .sub_visual .price table tr:nth-of-type(4) button img {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+#contain > .sub_visual .price table tr:nth-of-type(5) button {
+  font-size: 11px;
+  color: #222;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+#contain > .sub_visual .price table tr:nth-of-type(6) {
+  border: none;
+}
+#contain > .sub_visual .price table tr:nth-of-type(6) td {
+  width: 100%;
+  text-align: left;
+}
+#contain > .sub_visual .price table tr:nth-of-type(6) td span {
+  float: left;
+  color: #595959;
+  font-size: 13px;
+}
+#contain > .sub_visual .price table tr:nth-of-type(6) td button {
+  float: right;
+  font-size: 12px;
+  color: #474c98;
+  border: 1px solid #474c98;
+  border-radius: 5px;
+  padding: 5px;
+}
+#contain > .sub_visual .price table tr:nth-of-type(6) td button img {
+  width: 12px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+#contain > .sub_visual .price > button {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+#contain > .sub_visual .price > button img {
+  width: 13px;
+  vertical-align: top;
+  margin-right: 5px;
+}

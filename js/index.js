@@ -181,7 +181,7 @@ $(document).ready(function () {
         }
         console.log(c_i)
         var c_back=$('.casting ul li').eq(c_i).find('.play img:nth-of-type(2)').attr('src');
-        var c_go='"'+'../'+c_back+'"';
+        var c_go='"'+'./'+c_back+'"';
         console.log(c_back);
         console.log(c_go);
 

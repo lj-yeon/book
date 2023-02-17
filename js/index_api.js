@@ -31,7 +31,7 @@ $(document).ready(function () {
                 var pri=msg.documents[i].price;
                 var sal_pri=msg.documents[i].sale_price;
                 var total_pri=pri-sal_pri;
-                var sal=Number(pri/total_pri)
+                var sal=parseInt(Number(pri/total_pri)) 
                 console.log(sal)
                 $(today11).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
                 $(today11).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
@@ -68,7 +68,7 @@ $(document).ready(function () {
                 var pri=msg.documents[i].price;
                 var sal_pri=msg.documents[i].sale_price;
                 var total_pri=pri-sal_pri;
-                var sal=Number(pri/total_pri)
+                var sal=parseInt(Number(pri/total_pri)) 
                 console.log(sal)
                 $(today22).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
                 $(today22).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
@@ -101,7 +101,7 @@ $(document).ready(function () {
                 var pri=msg.documents[i].price;
                 var sal_pri=msg.documents[i].sale_price;
                 var total_pri=pri-sal_pri;
-                var sal=Number(pri/total_pri)
+                var sal=parseInt(Number(pri/total_pri)) 
                 console.log(sal)
                 $(today33).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
                 $(today33).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
@@ -134,7 +134,7 @@ $(document).ready(function () {
                 var pri=msg.documents[i].price;
                 var sal_pri=msg.documents[i].sale_price;
                 var total_pri=pri-sal_pri;
-                var sal=Number(pri/total_pri)
+                var sal=parseInt(Number(pri/total_pri)) 
                 console.log(sal)
                 $(today44).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
                 $(today44).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
@@ -168,7 +168,7 @@ $(document).ready(function () {
                 var pri=msg.documents[i].price;
                 var sal_pri=msg.documents[i].sale_price;
                 var total_pri=pri-sal_pri;
-                var sal=Number(pri/total_pri)
+                var sal=parseInt(Number(pri/total_pri)) 
                 console.log(sal)
                 $(today55).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
                 $(today55).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
@@ -201,7 +201,7 @@ $(document).ready(function () {
                 var pri=msg.documents[i].price;
                 var sal_pri=msg.documents[i].sale_price;
                 var total_pri=pri-sal_pri;
-                var sal=Number(pri/total_pri)
+                var sal=parseInt(Number(pri/total_pri)) 
                 console.log(sal)
                 $(today66).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
                 $(today66).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
@@ -234,7 +234,7 @@ $(document).ready(function () {
                 var pri=msg.documents[i].price;
                 var sal_pri=msg.documents[i].sale_price;
                 var total_pri=pri-sal_pri;
-                var sal=Number(pri/total_pri)
+                var sal=parseInt(Number(pri/total_pri)) 
                 console.log(sal)
                 $(today77).eq(i).find('p').eq(1).html(sal_pri.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
                 $(today77).eq(i).find('span').eq(0).html(sal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'% ');
