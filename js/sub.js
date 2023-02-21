@@ -20,7 +20,6 @@ $(document).ready(function(){
     };
     $('.img_box').find('.right_btn').click(function(){
         vcount++;
-        vconsole.log(count)
         if(vcount>=$('.img_boxy li').length-1){
             vcount=$('.img_boxy li').length-1
             $(this).css({'opacity':'0.5'});
@@ -51,16 +50,19 @@ $(document).ready(function(){
     var bookmove= $('.bookcard button').parent().siblings('.substance').find('ul');
 
     $('.bookcard').find('.left_btn').click(function(){
+        bookmove.css({'margin-left':'-51%'});
+        bookmove.children().last().prependTo(bookmove);
+        bookmove.stop().animate({'margin-left':'0%'});
+    })
+    $('.bookcard').find('.right_btn').click(function(){
         bookmove.stop().animate({'margin-left':'-51%'},function(){
             $(this).children().first().appendTo(this);
             $(this).css({'margin-left':'0'});
        });
     })
-    $('.bookcard').find('.right_btn').click(function(){
-        bookmove.css({'margin-left':'-51%'});
-        bookmove.children().last().prependTo(bookmove);
-        bookmove.stop().animate({'margin-left':'0%'});
-    })
 
 
+
+   
+    
 })

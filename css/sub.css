@@ -261,7 +261,7 @@
 }
 #contain > section.sub_visual .img_box .left_right {
   position: absolute;
-  width: 110%;
+  width: 112%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -270,17 +270,26 @@
 }
 #contain > section.sub_visual .img_box .left_right button {
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   text-align: center;
   vertical-align: middle;
   border-radius: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 20px;
+  position: relative;
 }
 #contain > section.sub_visual .img_box .left_right button:nth-of-type(1) {
   opacity: 0.5;
+}
+#contain > section.sub_visual .img_box .left_right button i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
 }
 #contain > section.sub_visual .img_box .img_btn {
   font-weight: bold;
@@ -436,28 +445,34 @@
   vertical-align: top;
   margin-right: 5px;
 }
+#contain > section.infor .title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#contain > section.infor .title h4 {
+  width: 41%;
+  font-size: 20px;
+  letter-spacing: -0.105em;
+}
+#contain > section.infor .title p {
+  font-size: 12px;
+  color: #767676;
+  text-align: right;
+}
+#contain > section.infor .substance {
+  width: 100%;
+  margin-top: 20px;
+}
 #contain > section.infor .content_left {
   width: 810px;
   float: left;
 }
 #contain > section.infor .content_left > div {
   width: 100%;
-  margin-top: 70px;
-}
-#contain > section.infor .content_left > div .title {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-#contain > section.infor .content_left > div .title h4 {
-  width: 40%;
-  font-size: 20px;
-}
-#contain > section.infor .content_left > div .title p {
-  width: 60%;
-  font-size: 12px;
-  color: #767676;
+  margin-top: 50px;
 }
 #contain > section.infor .content_left > div .substance {
   width: 100%;
@@ -531,6 +546,15 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 20px;
+  position: relative;
+}
+#contain > section.infor .content_left > div.bookcard .left_right button i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
 }
 #contain > section.infor .content_left > div.together .substance {
   width: 100%;
@@ -614,6 +638,96 @@
   color: #595959;
   line-height: 25px;
 }
+#contain > section.infor .content_left > div.writer .substance {
+  padding: 36px 30px 40px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+}
+#contain > section.infor .content_left > div.writer .substance .title h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+#contain > section.infor .content_left > div.writer .substance .title h4 span {
+  font-weight: bold;
+}
+#contain > section.infor .content_left > div.writer .substance .title h4 i {
+  cursor: pointer;
+}
+#contain > section.infor .content_left > div.writer .substance .title p {
+  cursor: pointer;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #292929;
+  line-height: 15px;
+}
+#contain > section.infor .content_left > div.writer .substance .title p img {
+  height: 15px;
+  vertical-align: top;
+}
+#contain > section.infor .content_left > div.writer .substance button {
+  margin: 20px 0;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #595959;
+}
+#contain > section.infor .content_left > div.writer .writer_infor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+#contain > section.infor .content_left > div.writer .writer_infor .img_box {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  float: left;
+}
+#contain > section.infor .content_left > div.writer .writer_infor .img_box img {
+  width: 100%;
+}
+#contain > section.infor .content_left > div.writer .writer_infor p {
+  float: right;
+  font-size: 15px;
+  line-height: 23px;
+  height: 70px;
+  overflow: hidden;
+  width: 630px;
+}
+#contain > section.infor .content_left > div.writer .swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+#contain > section.infor .content_left > div.writer .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contain > section.infor .content_left > div.writer .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contain > section.infor .content_left > div.writer picture {
+  display: block;
+  width: 110px;
+  height: 150px;
+  background: skyblue;
+}
+#contain > section.infor .content_left > div.writer h5 {
+  font-size: 15px;
+  margin-top: 10px;
+}
 #contain > section.infor .content_left > div.return p {
   font-size: 14px;
   color: #222;
@@ -664,7 +778,82 @@
   color: #222;
   padding: 15px 10px;
 }
+#contain > section.infor .content_left > div.basic table td {
+  color: #767676;
+}
 #contain > section.infor .content_right {
   width: 330px;
   float: right;
+}
+#contain > section.infor .content_right > div {
+  width: 100%;
+  margin-top: 30px;
+}
+#contain > section.infor .content_right > div.push {
+  margin-top: 100px;
+}
+#contain > section.infor .content_right > div.push img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+#contain > section.infor .content_right > div.push .swiper {
+  width: 100%;
+  height: 100%;
+}
+#contain > section.infor .content_right > div.push .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contain > section.infor .content_right > div.push .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contain > section.infor .content_right > div.push .swiper-slide {
+  width: 80%;
+}
+#contain > section.infor .content_right > div.best ul {
+  width: 100%;
+  overflow: hidden;
+}
+#contain > section.infor .content_right > div.best ul li {
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#contain > section.infor .content_right > div.best ul li a {
+  display: flex;
+  align-items: center;
+}
+#contain > section.infor .content_right > div.best ul li a picture {
+  display: block;
+  width: 110px;
+  height: 150px;
+  background: skyblue;
+}
+#contain > section.infor .content_right > div.best ul li a > div {
+  margin-left: 20px;
+}
+#contain > section.infor .content_right > div.best ul li a > div h5 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+#contain > section.infor .content_right > div.best ul li a > div p:nth-of-type(1) {
+  font-size: 13px;
+  margin: 10px 0 10px 0;
+}
+#contain > section.infor .content_right > div.best ul li a > div p:nth-of-type(2) {
+  font-size: 14px;
+}
+#contain > section.infor .content_right > div.ad img {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
 }

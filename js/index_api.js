@@ -17,13 +17,13 @@ $(document).ready(function () {
             for (var i = 0; i < today1.length; i++) {
 
 
-                $(today1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today1).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today1).eq(i).children('h4').html(msg.documents[i].title);
                 $(today1).eq(i).find('span').html(msg.documents[i].authors);
                 $(today1).eq(i).children('p').html(msg.documents[i].contents);
 
    
-                $(today11).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today11).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today11).eq(i).find('h3').html(msg.documents[i].title);
                 $(today11).eq(i).find('p').eq(0).html(msg.documents[i].authors);
 
@@ -56,13 +56,13 @@ $(document).ready(function () {
             var today22 = $('.today .content2 .detail li')
             for (var i = 0; i < today2.length; i++) {
 
-                $(today2).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today2).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today2).eq(i).children('h4').html(msg.documents[i].title);
                 $(today2).eq(i).find('span').html(msg.documents[i].authors);
                 $(today2).eq(i).children('p').html(msg.documents[i].contents);
 
    
-                $(today22).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today22).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today22).eq(i).find('h3').html(msg.documents[i].title);
                 $(today22).eq(i).find('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -89,13 +89,13 @@ $(document).ready(function () {
             var today33 = $('.today .content3 .detail li')
             for (var i = 0; i < today3.length; i++) {
 
-                $(today3).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today3).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today3).eq(i).children('h4').html(msg.documents[i].title);
                 $(today3).eq(i).find('span').html(msg.documents[i].authors);
                 $(today3).eq(i).children('p').html(msg.documents[i].contents);
 
    
-                $(today33).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today33).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today33).eq(i).find('h3').html(msg.documents[i].title);
                 $(today33).eq(i).find('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -122,13 +122,13 @@ $(document).ready(function () {
             var today44 = $('.today .content4 .detail li')
             for (var i = 0; i < today4.length; i++) {
 
-                $(today4).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today4).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today4).eq(i).children('h4').html(msg.documents[i].title);
                 $(today4).eq(i).find('span').html(msg.documents[i].authors);
                 $(today4).eq(i).children('p').html(msg.documents[i].contents);
 
    
-                $(today44).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today44).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today44).eq(i).find('h3').html(msg.documents[i].title);
                 $(today44).eq(i).find('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -156,13 +156,13 @@ $(document).ready(function () {
             var today55 = $('.today .content5 .detail li')
             for (var i = 0; i < today5.length; i++) {
 
-                $(today5).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today5).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today5).eq(i).children('h4').html(msg.documents[i].title);
                 $(today5).eq(i).find('span').html(msg.documents[i].authors);
                 $(today5).eq(i).children('p').html(msg.documents[i].contents);
 
    
-                $(today55).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today55).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today55).eq(i).find('h3').html(msg.documents[i].title);
                 $(today55).eq(i).find('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -189,13 +189,13 @@ $(document).ready(function () {
             var today66 = $('.today .content6 .detail li')
             for (var i = 0; i < today6.length; i++) {
 
-                $(today6).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today6).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today6).eq(i).children('h4').html(msg.documents[i].title);
                 $(today6).eq(i).find('span').html(msg.documents[i].authors);
                 $(today6).eq(i).children('p').html(msg.documents[i].contents);
 
    
-                $(today66).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today66).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today66).eq(i).find('h3').html(msg.documents[i].title);
                 $(today66).eq(i).find('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -222,13 +222,13 @@ $(document).ready(function () {
             var today77 = $('.today .content7 .detail li')
             for (var i = 0; i < today7.length; i++) {
 
-                $(today7).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today7).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today7).eq(i).children('h4').html(msg.documents[i].title);
                 $(today7).eq(i).find('span').html(msg.documents[i].authors);
                 $(today7).eq(i).children('p').html(msg.documents[i].contents);
 
    
-                $(today77).eq(i).find('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(today77).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(today77).eq(i).find('h3').html(msg.documents[i].title);
                 $(today77).eq(i).find('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -259,8 +259,8 @@ $(document).ready(function () {
 
             var jump1 = $('.jump .content1 li')
             for (var i = 0; i < jump1.length; i++) {
-                $(jump1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-                $(jump1).eq(i).children('h3').html('<a href="#">' + msg.documents[i].title + "</a>");
+                $(jump1).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(jump1).eq(i).children('h3').html('<a href="sub.html">' + msg.documents[i].title + "</a>");
                 $(jump1).eq(i).children('p').html(msg.documents[i].authors);
             }
         });
@@ -277,7 +277,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var hot_issue1 = $('.hot_issue .content1 li')
             for (var i = 0; i < hot_issue1.length; i++) {
-                $(hot_issue1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(hot_issue1).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(hot_issue1).eq(i).children('h3').html(msg.documents[i].title);
                 $(hot_issue1).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -293,7 +293,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var hot_issue2 = $('.hot_issue .content2 li')
             for (var i = 0; i < hot_issue2.length; i++) {
-                $(hot_issue2).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(hot_issue2).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(hot_issue2).eq(i).children('h3').html(msg.documents[i].title);
                 $(hot_issue2).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -309,7 +309,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var hot_issue3 = $('.hot_issue .content3 li')
             for (var i = 0; i < hot_issue3.length; i++) {
-                $(hot_issue3).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(hot_issue3).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(hot_issue3).eq(i).children('h3').html(msg.documents[i].title);
                 $(hot_issue3).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -325,7 +325,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var hot_issue4 = $('.hot_issue .content4 li')
             for (var i = 0; i < hot_issue4.length; i++) {
-                $(hot_issue4).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(hot_issue4).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(hot_issue4).eq(i).children('h3').html(msg.documents[i].title);
                 $(hot_issue4).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -342,7 +342,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var hot_issue5 = $('.hot_issue .content5 li')
             for (var i = 0; i < hot_issue5.length; i++) {
-                $(hot_issue5).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(hot_issue5).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(hot_issue5).eq(i).children('h3').html(msg.documents[i].title);
                 $(hot_issue5).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -358,7 +358,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var hot_issue6 = $('.hot_issue .content6 li')
             for (var i = 0; i < hot_issue6.length; i++) {
-                $(hot_issue6).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(hot_issue6).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(hot_issue6).eq(i).children('h3').html(msg.documents[i].title);
                 $(hot_issue6).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -374,7 +374,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var hot_issue7 = $('.hot_issue .content7 li')
             for (var i = 0; i < hot_issue7.length; i++) {
-                $(hot_issue7).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(hot_issue7).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(hot_issue7).eq(i).children('h3').html(msg.documents[i].title);
                 $(hot_issue7).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -397,8 +397,8 @@ $(document).ready(function () {
 
             var week1 = $('.week .content1 li')
             for (var i = 0; i < week1.length; i++) {
-                $(week1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-                $(week1).eq(i).children('h3').html('<a href="#">' + msg.documents[i].title + "</a>");
+                $(week1).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(week1).eq(i).children('h3').html('<a href="sub.html">' + msg.documents[i].title + "</a>");
                 $(week1).eq(i).children('p').eq(0).html(msg.documents[i].authors);
                 $(week1).eq(i).children('p').eq(1).html(msg.documents[i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원')
             }
@@ -416,7 +416,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best1 = $('.best .content1 li')
             for (var i = 0; i < best1.length; i++) {
-                $(best1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best1).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best1).eq(i).children('h3').html(msg.documents[i].title);
                 $(best1).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -432,7 +432,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best2 = $('.best .content2 li')
             for (var i = 0; i < best2.length; i++) {
-                $(best2).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best2).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best2).eq(i).children('h3').html(msg.documents[i].title);
                 $(best2).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -448,7 +448,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best3 = $('.best .content3 li')
             for (var i = 0; i < best3.length; i++) {
-                $(best3).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best3).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best3).eq(i).children('h3').html(msg.documents[i].title);
                 $(best3).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -464,7 +464,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best4 = $('.best .content4 li')
             for (var i = 0; i < best4.length; i++) {
-                $(best4).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best4).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best4).eq(i).children('h3').html(msg.documents[i].title);
                 $(best4).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -481,7 +481,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best5 = $('.best .content5 li')
             for (var i = 0; i < best5.length; i++) {
-                $(best5).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best5).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best5).eq(i).children('h3').html(msg.documents[i].title);
                 $(best5).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -497,7 +497,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best6 = $('.best .content6 li')
             for (var i = 0; i < best6.length; i++) {
-                $(best6).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best6).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best6).eq(i).children('h3').html(msg.documents[i].title);
                 $(best6).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -513,7 +513,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best7 = $('.best .content7 li')
             for (var i = 0; i < best7.length; i++) {
-                $(best7).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best7).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best7).eq(i).children('h3').html(msg.documents[i].title);
                 $(best7).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -531,7 +531,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best2_1 = $('.best .content:nth-of-type(2) .content1 li')
             for (var i = 0; i < best2_1.length; i++) {
-                $(best2_1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best2_1).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best2_1).eq(i).children('h3').html(msg.documents[i].title);
                 $(best2_1).eq(i).children('p').html(msg.documents[i].authors);
             }
@@ -547,7 +547,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best2_2 = $('.best .content:nth-of-type(2) .content2 li')
             for (var i = 0; i < best2_2.length; i++) {
-                $(best2_2).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best2_2).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best2_2).eq(i).children('h3').html(msg.documents[i].title);
                 $(best2_2).eq(i).children('p').eq(0).html(msg.documents[i].authors);
             }
@@ -564,7 +564,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best_selling1 = $('.best_selling .content1 li')
             for (var i = 0; i < best_selling1.length; i++) {
-                $(best_selling1).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best_selling1).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling1).eq(i).children('h3').html(msg.documents[i].title);
                 $(best_selling1).eq(i).children('p').eq(0).html(msg.documents[i].authors);
 
@@ -588,7 +588,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best_selling2 = $('.best_selling .content2 li')
             for (var i = 0; i < best_selling2.length; i++) {
-                $(best_selling2).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best_selling2).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling2).eq(i).children('h3').html(msg.documents[i].title);
                 $(best_selling2).eq(i).children('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -611,7 +611,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best_selling3 = $('.best_selling .content3 li')
             for (var i = 0; i < best_selling3.length; i++) {
-                $(best_selling3).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best_selling3).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling3).eq(i).children('h3').html(msg.documents[i].title);
                 $(best_selling3).eq(i).children('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -634,7 +634,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best_selling4 = $('.best_selling .content4 li')
             for (var i = 0; i < best_selling4.length; i++) {
-                $(best_selling4).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best_selling4).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling4).eq(i).children('h3').html(msg.documents[i].title);
                 $(best_selling4).eq(i).children('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
@@ -657,7 +657,7 @@ $(document).ready(function () {
         .done(function (msg) {
             var best_selling5 = $('.best_selling .content5 li')
             for (var i = 0; i < best_selling5.length; i++) {
-                $(best_selling5).eq(i).children('picture').html('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                $(best_selling5).eq(i).children('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(best_selling5).eq(i).children('h3').html(msg.documents[i].title);
                 $(best_selling5).eq(i).children('p').eq(0).html(msg.documents[i].authors);
                 var pri=msg.documents[i].price;
