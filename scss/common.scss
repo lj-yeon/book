@@ -361,3 +361,56 @@ footer{
         }
     }
 }
+#top{
+    display:none;
+    width:50px; height:50px;
+    border-radius: 100%;
+    background:white;
+    border:1px solid #ccc;
+    position:fixed;
+    bottom:130px; right:30px;
+    z-index:100;
+    font-size:12px;
+    text-align:center;
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    color:#595959;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    img{
+       width:10px;
+       margin-bottom:5px;
+    }
+}
+#side_ad{
+    width:100px;
+    position:fixed;
+     right:10px;
+    z-index:99;
+    background:white;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:7px;
+    font-size:12px;
+    >div{
+        &:nth-of-type(1){
+            margin-bottom:5px;
+        }
+    }
+    a{
+        width:100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    img{
+        width:100%;
+        border-radius: 10px;
+    }
+    p{
+        margin:10px 0;
+    }
+}

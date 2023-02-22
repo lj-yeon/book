@@ -1,10 +1,19 @@
-$(document).ready(function () {
+$(window).scroll(function(){
+    if($(window).scrollTop()>=100){
+        $('#top').fadeIn(100).css({'display':'flex','bottom':'30px'})
+        $('#side_ad').css({'top':'300px'});
+    }else{
+        $('#top').fadeOut(100)
+        $('#side_ad').css({'top':'850px'});
+    }
+})
 
-    //헤더//
-    // $('#gnb>i').click(function () {
-    //     $(this).parent().children('#lnb').toggle();
-    // });
 
+$(document).ready(function(){
+    $('#side_ad').css({'top':'850px'});
+    $('#top').click(function(){
+        $('html').animate({scrollTop:0},850)
+    })
 
     //비주얼//
     //메인슬라이드
