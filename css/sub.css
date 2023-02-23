@@ -64,7 +64,9 @@
 #contain > div.menu {
   width: 100%;
   height: 70px;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #adadad;
+  background: white;
+  z-index: 10;
 }
 #contain > div.menu ul {
   width: 1200px;
@@ -72,15 +74,12 @@
 }
 #contain > div.menu li {
   float: left;
-  line-height: 70px;
+  line-height: 68px;
   margin-right: 50px;
-}
-#contain > div.menu li a {
-  display: block;
   color: #767676;
   font-size: 16px;
-  line-height: 70px;
   font-weight: 400;
+  cursor: pointer;
 }
 #contain > section {
   width: 1200px;
@@ -446,98 +445,97 @@
   vertical-align: top;
   margin-right: 5px;
 }
-#contain > section.infor .title {
+#contain > section#infor .title {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-#contain > section.infor .title h4 {
+#contain > section#infor .title h4 {
   width: 41%;
   font-size: 20px;
-  letter-spacing: -0.105em;
 }
-#contain > section.infor .title p {
+#contain > section#infor .title p {
   font-size: 12px;
   color: #767676;
   text-align: right;
 }
-#contain > section.infor .substance {
+#contain > section#infor .substance {
   width: 100%;
   margin-top: 20px;
 }
-#contain > section.infor .content_left {
+#contain > section#infor #content_left {
   width: 810px;
   float: left;
 }
-#contain > section.infor .content_left > div {
+#contain > section#infor #content_left > div {
   width: 100%;
   margin-top: 50px;
 }
-#contain > section.infor .content_left > div .substance {
+#contain > section#infor #content_left > div .substance {
   width: 100%;
   margin-top: 20px;
 }
-#contain > section.infor .content_left > div.event {
+#contain > section#infor #content_left > div#event {
   padding-top: 30px;
 }
-#contain > section.infor .content_left > div.event ul {
+#contain > section#infor #content_left > div#event ul {
   display: flex;
 }
-#contain > section.infor .content_left > div.event ul li:not(:nth-last-of-type(1)) {
+#contain > section#infor #content_left > div#event ul li:not(:nth-last-of-type(1)) {
   margin-right: 20px;
 }
-#contain > section.infor .content_left > div.event ul li img {
+#contain > section#infor #content_left > div#event ul li img {
   border-radius: 20px;
 }
-#contain > section.infor .content_left > div.event ul li h5 {
+#contain > section#infor #content_left > div#event ul li h5 {
   font-size: 15px;
   margin-top: 15px;
 }
-#contain > section.infor .content_left > div.event ul li p {
+#contain > section#infor #content_left > div#event ul li p {
   font-size: 13px;
   margin-top: 5px;
 }
-#contain > section.infor .content_left > div.bookcard .title button {
+#contain > section#infor #content_left > div#bookcard .title button {
   border: 1px solid #ddd;
   border-radius: 100%;
   width: 40px;
   height: 40px;
   position: relative;
 }
-#contain > section.infor .content_left > div.bookcard .title button img {
+#contain > section#infor #content_left > div#bookcard .title button img {
   width: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#contain > section.infor .content_left > div.bookcard .substance {
+#contain > section#infor #content_left > div#bookcard .substance {
   width: 100%;
   overflow: hidden;
 }
-#contain > section.infor .content_left > div.bookcard .substance ul {
+#contain > section#infor #content_left > div#bookcard .substance ul {
   width: 600%;
   overflow: hidden;
 }
-#contain > section.infor .content_left > div.bookcard .substance ul li {
+#contain > section#infor #content_left > div#bookcard .substance ul li {
   width: 395px;
   margin-right: 20px;
   float: left;
 }
-#contain > section.infor .content_left > div.bookcard .substance ul li img {
+#contain > section#infor #content_left > div#bookcard .substance ul li img {
   width: 100%;
   border-radius: 20px;
 }
-#contain > section.infor .content_left > div.bookcard .left_right {
+#contain > section#infor #content_left > div#bookcard .left_right {
   position: absolute;
   width: 860px;
   margin: -230px 0 0 -25px;
   display: flex;
   justify-content: space-between;
 }
-#contain > section.infor .content_left > div.bookcard .left_right button {
+#contain > section#infor #content_left > div#bookcard .left_right button {
   display: none;
   width: 50px;
   height: 50px;
@@ -549,7 +547,7 @@
   font-size: 20px;
   position: relative;
 }
-#contain > section.infor .content_left > div.bookcard .left_right button i {
+#contain > section#infor #content_left > div#bookcard .left_right button i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -557,108 +555,108 @@
   color: white;
   font-size: 15px;
 }
-#contain > section.infor .content_left > div.together .substance {
+#contain > section#infor #content_left > div#together .substance {
   width: 100%;
   padding: 30px;
   border-radius: 20px;
   background-color: #f7f7f7;
 }
-#contain > section.infor .content_left > div.together .substance ul {
+#contain > section#infor #content_left > div#together .substance ul {
   width: 100%;
   overflow: hidden;
 }
-#contain > section.infor .content_left > div.together .substance ul li {
+#contain > section#infor #content_left > div#together .substance ul li {
   width: 110px;
   margin-right: 20px;
   float: left;
 }
-#contain > section.infor .content_left > div.together .substance ul li a {
+#contain > section#infor #content_left > div#together .substance ul li a {
   display: block;
 }
-#contain > section.infor .content_left > div.together .substance ul li picture {
+#contain > section#infor #content_left > div#together .substance ul li picture {
   display: block;
   width: 100%;
 }
-#contain > section.infor .content_left > div.together .substance ul li picture img {
+#contain > section#infor #content_left > div#together .substance ul li picture img {
   width: 100%;
 }
-#contain > section.infor .content_left > div.together .substance ul li h5 {
+#contain > section#infor #content_left > div#together .substance ul li h5 {
   font-size: 15px;
   margin-top: 10px;
 }
-#contain > section.infor .content_left > div.together .substance ul li p:nth-of-type(1) {
+#contain > section#infor #content_left > div#together .substance ul li p:nth-of-type(1) {
   font-size: 13px;
   margin: 10px 0 10px 0;
 }
-#contain > section.infor .content_left > div.together .substance ul li p:nth-of-type(2) {
+#contain > section#infor #content_left > div#together .substance ul li p:nth-of-type(2) {
   font-size: 14px;
 }
-#contain > section.infor .content_left > div.together .substance ul li p:nth-of-type(2) span {
+#contain > section#infor #content_left > div#together .substance ul li p:nth-of-type(2) span {
   font-weight: bold;
 }
-#contain > section.infor .content_left > div.detail_img {
+#contain > section#infor #content_left > div#detail_img {
   width: 100%;
 }
-#contain > section.infor .content_left > div.detail_img img {
+#contain > section#infor #content_left > div#detail_img img {
   width: 100%;
   border-radius: 20px;
 }
-#contain > section.infor .content_left > div.introduce .substance h5 {
+#contain > section#infor #content_left > div.introduce .substance h5 {
   font-size: 15px;
   margin-bottom: 10px;
   line-height: 25px;
 }
-#contain > section.infor .content_left > div.introduce .substance > div:not(:nth-last-of-type(1)) {
+#contain > section#infor #content_left > div.introduce .substance > div:not(:nth-last-of-type(1)) {
   border-bottom: 1px solid #eaeaea;
 }
-#contain > section.infor .content_left > div.introduce .substance > div:not(:nth-of-type(1)) {
+#contain > section#infor #content_left > div.introduce .substance > div:not(:nth-of-type(1)) {
   padding: 30px 0;
 }
-#contain > section.infor .content_left > div.introduce .substance > div:nth-of-type(1) {
+#contain > section#infor #content_left > div.introduce .substance > div:nth-of-type(1) {
   padding-bottom: 30px;
 }
-#contain > section.infor .content_left > div.introduce .substance ul {
+#contain > section#infor #content_left > div.introduce .substance ul {
   width: 100%;
   overflow: hidden;
 }
-#contain > section.infor .content_left > div.introduce .substance ul:nth-of-type(1) li {
+#contain > section#infor #content_left > div.introduce .substance ul:nth-of-type(1) li {
   margin-bottom: 10px;
 }
-#contain > section.infor .content_left > div.introduce .substance ul li {
+#contain > section#infor #content_left > div.introduce .substance ul li {
   float: left;
   line-height: 20px;
 }
-#contain > section.infor .content_left > div.introduce .substance ul li a {
+#contain > section#infor #content_left > div.introduce .substance ul li a {
   font-weight: bold;
   font-size: 14px;
   color: #767676;
   display: inline-block;
 }
-#contain > section.infor .content_left > div.introduce .substance ul li span {
+#contain > section#infor #content_left > div.introduce .substance ul li span {
   color: #767676;
   padding: 0 10px;
 }
-#contain > section.infor .content_left > div.book p {
+#contain > section#infor #content_left > div#book p {
   font-size: 15px;
   color: #595959;
   line-height: 25px;
 }
-#contain > section.infor .content_left > div.writer .substance {
+#contain > section#infor #content_left > div#writer .substance {
   padding: 36px 30px 40px;
   border-radius: 20px;
   background-color: #f7f7f7;
 }
-#contain > section.infor .content_left > div.writer .substance .title h4 {
+#contain > section#infor #content_left > div#writer .substance .title h4 {
   font-size: 16px;
   font-weight: normal;
 }
-#contain > section.infor .content_left > div.writer .substance .title h4 span {
+#contain > section#infor #content_left > div#writer .substance .title h4 span {
   font-weight: bold;
 }
-#contain > section.infor .content_left > div.writer .substance .title h4 i {
+#contain > section#infor #content_left > div#writer .substance .title h4 i {
   cursor: pointer;
 }
-#contain > section.infor .content_left > div.writer .substance .title p {
+#contain > section#infor #content_left > div#writer .substance .title p {
   cursor: pointer;
   background: white;
   border: 1px solid #ddd;
@@ -668,11 +666,11 @@
   color: #292929;
   line-height: 15px;
 }
-#contain > section.infor .content_left > div.writer .substance .title p img {
+#contain > section#infor #content_left > div#writer .substance .title p img {
   height: 15px;
   vertical-align: top;
 }
-#contain > section.infor .content_left > div.writer .substance button {
+#contain > section#infor #content_left > div#writer .substance > button {
   margin: 20px 0;
   background: white;
   padding: 10px 15px;
@@ -681,102 +679,102 @@
   font-weight: bold;
   color: #595959;
 }
-#contain > section.infor .content_left > div.writer .writer_infor {
+#contain > section#infor #content_left > div#writer .writer_infor {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
-#contain > section.infor .content_left > div.writer .writer_infor .img_box {
+#contain > section#infor #content_left > div#writer .writer_infor .img_box {
   width: 100px;
   height: 100px;
   border-radius: 100%;
   overflow: hidden;
   float: left;
 }
-#contain > section.infor .content_left > div.writer .writer_infor .img_box img {
+#contain > section#infor #content_left > div#writer .writer_infor .img_box img {
   width: 100%;
 }
-#contain > section.infor .content_left > div.writer .writer_infor p {
+#contain > section#infor #content_left > div#writer .writer_infor .history {
   float: right;
   font-size: 15px;
   line-height: 23px;
-  height: 70px;
-  overflow: hidden;
+  margin-bottom: 30px;
   width: 630px;
 }
-#contain > section.infor .content_left > div.writer .swiper {
+#contain > section#infor #content_left > div#writer .writer_infor .history p {
+  height: 70px;
+  overflow: hidden;
+}
+#contain > section#infor #content_left > div#writer .swiper {
   width: 100%;
   height: 100%;
   padding-bottom: 50px;
 }
-#contain > section.infor .content_left > div.writer .swiper-slide {
+#contain > section#infor #content_left > div#writer .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#contain > section.infor .content_left > div.writer .swiper-slide img {
+#contain > section#infor #content_left > div#writer .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#contain > section.infor .content_left > div.writer picture {
+#contain > section#infor #content_left > div#writer picture {
   display: block;
   width: 110px;
   border: 1px solid #c9c9c9;
 }
-#contain > section.infor .content_left > div.writer h5 {
+#contain > section#infor #content_left > div#writer h5 {
   font-size: 13px;
   padding-top: 20px;
 }
-#contain > section.infor .content_left > div.return p {
+#contain > section#infor #content_left > div#return p {
   font-size: 14px;
   color: #222;
   line-height: 23px;
 }
-#contain > section.infor .content_left > div.line {
+#contain > section#infor #content_left > div.line {
   color: #767676;
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 70px;
 }
-#contain > section.infor .content_left > div.line .substance h5 {
+#contain > section#infor #content_left > div.line .substance h5 {
   font-size: 15px;
   color: #474c98;
   padding: 10px 0;
   line-height: 25px;
 }
-#contain > section.infor .content_left > div.line .substance p {
+#contain > section#infor #content_left > div.line .substance p {
   color: #595959;
   line-height: 25px;
   font-size: 14px;
 }
-#contain > section.infor .content_left > div.return p {
+#contain > section#infor #content_left > div#return p {
   font-size: 14px;
   color: #222;
 }
-#contain > section.infor .content_left > div.return > div > p {
+#contain > section#infor #content_left > div#return > div > p {
   background: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
   font-size: 13px;
   color: #595959;
 }
-#contain > section.infor .content_left > div.publisher_review p {
+#contain > section#infor #content_left > div#publisher_review p {
   font-size: 15px;
   color: #595959;
   line-height: 25px;
-}
-#contain > section.infor .content_left > div.publisher_review .substance {
-  height: 360px;
+  height: 100px;
   overflow: hidden;
 }
-#contain > section.infor .content_left > div.basic {
+#contain > section#infor #content_left > div#basic {
   padding-bottom: 10px;
 }
-#contain > section.infor .content_left > div.basic table {
+#contain > section#infor #content_left > div#basic table {
   width: 100%;
   text-align: left;
   border-top: 2px solid black;
@@ -784,15 +782,15 @@
   color: #767676;
   padding: 10px 0;
 }
-#contain > section.infor .content_left > div.basic table th {
+#contain > section#infor #content_left > div#basic table th {
   width: 20%;
   color: #222;
   padding: 15px 10px;
 }
-#contain > section.infor .content_left > div.basic table td {
+#contain > section#infor #content_left > div#basic table td {
   color: #767676;
 }
-#contain > section.infor .content_left > div.review .review_box {
+#contain > section#infor #content_left > div#review .review_box {
   width: 100%;
   background-color: #f7f7f7;
   border: 1px solid #d5d5d5;
@@ -802,108 +800,108 @@
   justify-content: space-between;
   text-align: center;
 }
-#contain > section.infor .content_left > div.review .review_box > div {
+#contain > section#infor #content_left > div#review .review_box > div {
   width: 50%;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) {
   border-right: 1px solid #d5d5d5;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) h5 {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) h5 {
   font-size: 15px;
   margin-bottom: 8px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) > div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) > div img {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) > div img {
   width: 18px;
   height: 18px;
   margin-right: 4px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) > div p {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) > div p {
   font-size: 14px;
   color: #595959;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) > div p span {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) > div p span {
   color: #4dac27;
   font-weight: bold;
   font-size: 20px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul {
   margin-top: 30px;
   font-size: 13px;
   color: #595959;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li .review_bar {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li .review_bar {
   width: 200px;
   background: #e4e4e4;
   height: 5px;
   border-radius: 5px;
   margin: 0 10px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li .review_bar div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li .review_bar div {
   background: #4dac27;
   height: 5px;
   border-radius: 5px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li img {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li img {
   width: 15px;
   height: 15px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) .review_bar > div {
   width: 50px;
   background: #4dac27;
   height: 5px;
   border-radius: 5px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) img:nth-of-type(n+2) {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) img:nth-of-type(n+2) {
   opacity: 0.5;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(1) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(1) .review_bar > div {
   width: 200px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(2) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(2) .review_bar > div {
   width: 150px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(2) img:nth-of-type(n+4) {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(2) img:nth-of-type(n+4) {
   opacity: 0.5;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(3) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(3) .review_bar > div {
   width: 100px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(3) img:nth-of-type(n+3) {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(3) img:nth-of-type(n+3) {
   opacity: 0.5;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) .review_bar > div {
   width: 50px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) img:nth-of-type(n+2) {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(1) ul li:nth-of-type(4) img:nth-of-type(n+2) {
   opacity: 0.5;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) h5 {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) h5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) h5 img {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) h5 img {
   width: 18px;
   margin-right: 10px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) h5 span {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) h5 span {
   color: #474c98;
   font-weight: bold;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul {
   width: 80%;
   margin: 35px auto 0 auto;
   display: flex;
@@ -911,12 +909,12 @@
   font-size: 12px;
   color: #595959;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li .review_bar {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li .review_bar {
   height: 80px;
   background: #e4e4e4;
   width: 6px;
@@ -924,46 +922,46 @@
   margin: 10px 0 5px 0;
   position: relative;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li .review_bar > div {
   background: #575757;
   width: 6px;
   border-radius: 5px;
   bottom: 0;
   position: absolute;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li p:nth-of-type(1) span {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li p:nth-of-type(1) span {
   background: #474c98;
   color: white;
   padding: 3px 7px;
   font-weight: bold;
   border-radius: 15px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li p:nth-of-type(2) span {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li p:nth-of-type(2) span {
   color: #474c98;
   font-weight: bold;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li:nth-of-type(1) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li:nth-of-type(1) .review_bar > div {
   height: 0px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li:nth-of-type(2) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li:nth-of-type(2) .review_bar > div {
   height: 17px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li:nth-of-type(3) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li:nth-of-type(3) .review_bar > div {
   height: 0px;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li:nth-of-type(4) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li:nth-of-type(4) .review_bar > div {
   height: 30px;
   background: #474c98;
 }
-#contain > section.infor .content_left > div.review .review_box > div:nth-of-type(2) ul li:nth-of-type(5) .review_bar > div {
+#contain > section#infor #content_left > div#review .review_box > div:nth-of-type(2) ul li:nth-of-type(5) .review_bar > div {
   height: 20px;
 }
-#contain > section.infor .content_left > div.review .review_title {
+#contain > section#infor #content_left > div#review .review_title {
   margin-top: 30px;
   height: 42px;
   border-bottom: 1px solid #e0e0e0;
 }
-#contain > section.infor .content_left > div.review .review_title li {
+#contain > section#infor #content_left > div#review .review_title li {
   float: left;
   font-size: 14px;
   line-height: 40px;
@@ -971,66 +969,66 @@
   cursor: pointer;
   color: #adadad;
 }
-#contain > section.infor .content_left > div.review .review_title li:nth-of-type(2) {
+#contain > section#infor #content_left > div#review .review_title li:nth-of-type(2) {
   font-weight: bold;
   border-bottom: 2px solid #222;
   color: #222;
 }
-#contain > section.infor .content_left > div.review .review_content {
+#contain > section#infor #content_left > div#review .review_content {
   clear: both;
 }
-#contain > section.infor .content_left > div.review .review_content img {
+#contain > section#infor #content_left > div#review .review_content img {
   width: 15px;
   height: 15px;
   cursor: pointer;
 }
-#contain > section.infor .content_left > div.review .review_content li {
+#contain > section#infor #content_left > div#review .review_content li {
   padding: 20px 0 20px 10px;
   overflow: hidden;
   border-bottom: 1px solid #e0e0e0;
 }
-#contain > section.infor .content_left > div.review .review_content .id {
+#contain > section#infor #content_left > div#review .review_content .id {
   margin-bottom: 20px;
   color: #767676;
   font-size: 12px;
   float: left;
 }
-#contain > section.infor .content_left > div.review .review_content .id button {
+#contain > section#infor #content_left > div#review .review_content .id button {
   font-size: 12px;
   color: #767676;
 }
-#contain > section.infor .content_left > div.review .review_content .id span {
+#contain > section#infor #content_left > div#review .review_content .id span {
   padding: 2px 5px;
   border-radius: 10px;
   font-weight: bold;
   margin-right: 5px;
 }
-#contain > section.infor .content_left > div.review .review_content .id span:nth-of-type(1) {
+#contain > section#infor #content_left > div#review .review_content .id span:nth-of-type(1) {
   background: #dee1ff;
   font-weight: bold;
   color: #767676;
 }
-#contain > section.infor .content_left > div.review .review_content .id span:nth-of-type(2) {
+#contain > section#infor #content_left > div#review .review_content .id span:nth-of-type(2) {
   font-weight: bold;
   color: #595959;
   border: 1px solid #595959;
 }
-#contain > section.infor .content_left > div.review .review_content .one_comment {
+#contain > section#infor #content_left > div#review .review_content .one_comment {
   float: right;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#contain > section.infor .content_left > div.review .review_content .one_comment div {
+#contain > section#infor #content_left > div#review .review_content .one_comment div {
   color: #b4b4b4;
   margin-left: 5px;
 }
-#contain > section.infor .content_left > div.review .review_content .one_comment div span {
+#contain > section#infor #content_left > div#review .review_content .one_comment div span {
   color: #474c98;
   font-size: 14px;
   font-weight: bold;
 }
-#contain > section.infor .content_left > div.review .review_content p {
+#contain > section#infor #content_left > div#review .review_content p {
   float: left;
   width: 100%;
   font-size: 14px;
@@ -1038,39 +1036,52 @@
   color: #222;
   font-weight: bold;
 }
-#contain > section.infor .content_left > div.review .review_content .like {
+#contain > section#infor #content_left > div#review .review_content .like {
   float: right;
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-#contain > section.infor .content_left > div.review .review_content .like img {
+#contain > section#infor #content_left > div#review .review_content .like img {
   width: 20px;
   height: 20px;
   margin: 0 5px 0 10px;
 }
-#contain > section.infor .content_right {
+#contain > section#infor #content_left > div button.infor_show {
+  background: none;
+  display: flex;
+  align-items: center;
+  color: #767676;
+  padding: 10px 0;
+  width: 100%;
+}
+#contain > section#infor #content_left > div button.infor_show img {
+  width: 20px;
+  margin-left: 5px;
+  border: none;
+}
+#contain > section#infor #content_right {
   width: 330px;
   float: right;
 }
-#contain > section.infor .content_right > div {
+#contain > section#infor #content_right > div {
   width: 100%;
   margin-top: 30px;
 }
-#contain > section.infor .content_right > div.push {
+#contain > section#infor #content_right > div#push {
   margin-top: 100px;
 }
-#contain > section.infor .content_right > div.push img {
+#contain > section#infor #content_right > div#push img {
   border-radius: 20px;
   margin-bottom: 30px;
   cursor: pointer;
 }
-#contain > section.infor .content_right > div.push .swiper {
+#contain > section#infor #content_right > div#push .swiper {
   width: 100%;
   height: 100%;
 }
-#contain > section.infor .content_right > div.push .swiper-slide {
+#contain > section#infor #content_right > div#push .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1078,67 +1089,67 @@
   justify-content: center;
   align-items: center;
 }
-#contain > section.infor .content_right > div.push .swiper-slide img {
+#contain > section#infor #content_right > div#push .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#contain > section.infor .content_right > div.push .swiper-slide {
+#contain > section#infor #content_right > div#push .swiper-slide {
   width: 80%;
 }
-#contain > section.infor .content_right > div.ranking ul {
+#contain > section#infor #content_right > div.ranking ul {
   width: 100%;
   overflow: hidden;
 }
-#contain > section.infor .content_right > div.ranking ul li {
+#contain > section#infor #content_right > div.ranking ul li {
   width: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-#contain > section.infor .content_right > div.ranking ul li:nth-of-type(1) div > span {
+#contain > section#infor #content_right > div.ranking ul li:nth-of-type(1) div > span {
   background-color: #4dac27;
 }
-#contain > section.infor .content_right > div.ranking ul li a {
+#contain > section#infor #content_right > div.ranking ul li a {
   display: flex;
   align-items: center;
 }
-#contain > section.infor .content_right > div.ranking ul li a picture {
+#contain > section#infor #content_right > div.ranking ul li a picture {
   display: block;
   border: 1px solid #bebebe;
 }
-#contain > section.infor .content_right > div.ranking ul li a picture a {
+#contain > section#infor #content_right > div.ranking ul li a picture a {
   width: 110px;
 }
-#contain > section.infor .content_right > div.ranking ul li a picture a img {
+#contain > section#infor #content_right > div.ranking ul li a picture a img {
   width: 100%;
 }
-#contain > section.infor .content_right > div.ranking ul li a > div {
+#contain > section#infor #content_right > div.ranking ul li a > div {
   margin-left: 20px;
 }
-#contain > section.infor .content_right > div.ranking ul li a > div h5 {
+#contain > section#infor #content_right > div.ranking ul li a > div h5 {
   font-size: 15px;
   margin-top: 10px;
 }
-#contain > section.infor .content_right > div.ranking ul li a > div p:nth-of-type(1) {
+#contain > section#infor #content_right > div.ranking ul li a > div p:nth-of-type(1) {
   font-size: 14px;
   margin: 10px 0 15px 0;
 }
-#contain > section.infor .content_right > div.ranking ul li a > div > p:nth-of-type(2) {
+#contain > section#infor #content_right > div.ranking ul li a > div > p:nth-of-type(2) {
   font-size: 14px;
   font-weight: bold;
   float: left;
   color: #4dac27;
   margin-right: 5px;
 }
-#contain > section.infor .content_right > div.ranking ul li a > div p:nth-of-type(3) {
+#contain > section#infor #content_right > div.ranking ul li a > div p:nth-of-type(3) {
   font-size: 14px;
 }
-#contain > section.infor .content_right > div.ranking ul li a > div p:nth-of-type(3) span {
+#contain > section#infor #content_right > div.ranking ul li a > div p:nth-of-type(3) span {
   font-weight: bold;
 }
-#contain > section.infor .content_right > div.best .substance div > span {
+#contain > section#infor #content_right > div#best .substance div > span {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1151,7 +1162,7 @@
   border-top-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-#contain > section.infor .content_right > div.ad img {
+#contain > section#infor #content_right > div#ad img {
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
@@ -1188,7 +1199,7 @@
 #buy_wrap .buy .price h2 {
   font-size: 25px;
 }
-#buy_wrap .buy .howmay > div {
+#buy_wrap .buy .howmany > div {
   border: 1px solid #adadad;
   border-radius: 5px;
   height: 50px;
@@ -1201,62 +1212,62 @@
   margin-left: 5px;
   cursor: pointer;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(1) {
+#buy_wrap .buy .howmany > div:nth-of-type(1) {
   margin-right: 20px;
   height: 40px;
   padding: 0;
   justify-content: space-between;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(1) button {
+#buy_wrap .buy .howmany > div:nth-of-type(1) button {
   height: 100%;
   width: 35px;
   cursor: pointer;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(1) button img {
+#buy_wrap .buy .howmany > div:nth-of-type(1) button img {
   width: 10px;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(1) input {
+#buy_wrap .buy .howmany > div:nth-of-type(1) input {
   border: none;
   width: 30px;
   height: 100%;
   font-size: 15px;
   text-align: center;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(1) input::-webkit-outer-spin-button, #buy_wrap .buy .howmay > div:nth-of-type(1) input::-webkit-inner-spin-button {
+#buy_wrap .buy .howmany > div:nth-of-type(1) input::-webkit-outer-spin-button, #buy_wrap .buy .howmany > div:nth-of-type(1) input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(4) {
+#buy_wrap .buy .howmany > div:nth-of-type(4) {
   background: gray;
   color: white;
   border: none;
   padding: 0 30px;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(5) {
+#buy_wrap .buy .howmany > div:nth-of-type(5) {
   border: 1px solid #474c98;
   color: white;
   overflow: hidden;
   padding: 0;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(5) > div {
+#buy_wrap .buy .howmany > div:nth-of-type(5) > div {
   height: 100%;
   vertical-align: middle;
   width: 50%;
   padding: 0 20px;
   line-height: 50px;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(5) > div:nth-of-type(1) {
+#buy_wrap .buy .howmany > div:nth-of-type(5) > div:nth-of-type(1) {
   background: white;
   color: #474c98;
 }
-#buy_wrap .buy .howmay > div:nth-of-type(5) > div:nth-of-type(2) {
+#buy_wrap .buy .howmany > div:nth-of-type(5) > div:nth-of-type(2) {
   background: #474c98;
   color: white;
 }
-#buy_wrap .buy .howmay > div img {
+#buy_wrap .buy .howmany > div img {
   width: 20px;
 }
-#buy_wrap .buy .howmay > div b {
+#buy_wrap .buy .howmany > div b {
   margin-left: 5px;
 }
 

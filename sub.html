@@ -179,15 +179,15 @@
         </section>
         <div class='menu'>
             <ul>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">상품정보</a></li>
-                <li><a href="#">리뷰(<span>76</span>)</a></li>
-                <li><a href="#">교환/반품/품절</a></li>
+                <li>이벤트</li>
+                <li>상품정보</li>
+                <li>리뷰</li>
+                <li>교환/반품/품절</li>
             </ul>
         </div>
-        <section class="infor">
-            <div class="content_left">
-                <div class="event">
+        <section id="infor">
+            <div id="content_left">
+                <div id="event">
                     <div class="title">
                         <h4>이 책의 이벤트</h4>
                         <p>*해외주문/바로드림/제휴사주문/업체배송건의 경우 1+1 증정상품이 발송되지 않습니다.</p>
@@ -211,7 +211,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bookcard">
+                <div id="bookcard">
                     <div class="title">
                         <h4>북카드</h4>
                         <button><img src="subimg/share.png"></button>
@@ -240,7 +240,7 @@
                         <button class="right_btn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
-                <div class="together">
+                <div id="together">
                     <div class="title">
                         <h4>함께 구매한 책</h4>
                     </div>
@@ -273,10 +273,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="detail_img">
+                <div id="detail_img">
                     <img src="subimg/content.jpg" alt="나의 아름다운 날들 상세 이미지">
                 </div>
-                <div class="book introduce">
+                <div id="book" class="introduce">
                     <div class="title">
                         <h4>책소개</h4>
                     </div>
@@ -352,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="writer">
+                <div id="writer">
                     <div class="title">
                         <h4>작가정보</h4>
                     </div>
@@ -366,11 +366,14 @@
                         </div>
                         <button>현대문학가>소설가</button>
                         <div class="writer_infor">
-                            <div class="img_box"><img src="subimg/author.jpg" alt="정지아"></div>
-                            <div>
+                            <div class="img_box">
+                                <img src="subimg/author.jpg" alt="정지아">
+                            </div>
+                            <div class=history>
                                 <p>전남 구례에서 태어나 중앙대학교 대학원 문예창작학과 박사과정을 마쳤다. 1990년 장편소설 《빨치산의 딸》을 펴내며 작품활동을 시작했으며, 1995년 조선일보 신춘문예에 단편소설 〈고욤나무〉가 당선되었다. 소설집 《행복》 《봄빛》 《자본주의의 적》, 장편소설 《아버지의 해방일지》 등이 있다. 김유정문학상, 심훈문학대상, 이효석문학상, 한무숙문학상, 올해의 소설상, 노근리 평화문학상 등을 수상했다.
                                     “사람을 살게 하는 쌀 같은 소설을 쓸 수 있다면 좋겠다. 그런 소설을 위해, 농부의 정직한 땀방울, 흉내라도 낼 수 있다면 좋겠다.”
                                     - ‘작가의 말’ 중에서</p>
+                                <button class="infor_show"><span>펼치기</span><img src="subimg/row.png" alt="펼치기"></button>
                             </div>
                         </div>
                         <div class="swiper mySwiper">
@@ -454,7 +457,7 @@
                         },
                     });
                 </script>
-                <div class="index line">
+                <div id="index" class="line">
                     <div class="title">
                         <h4>목차</h4>
                     </div>
@@ -463,28 +466,32 @@
                             아름다운 날들 | 절정 | 작품해설 | 작가의 말</p>
                     </div>
                 </div>
-                <div class="testimonial line">
+                <div id="testimonial" class="line">
                     <div class="title">
                         <h4>추천사</h4>
                     </div>
                     <div class="substance">
-                        <h5>김인숙 (소설가)</h5>
-                        <p>나는 정지아의 소설을 쫓아 산으로 달리고 들로만 달리는 게 아니라,
-                            내게 이미 지나간 시간이거나 혹은 아직 다가오지 않은 시간들
-                            속으로도 달린다. 나 또한 어느 날, 어느 산속 깊은 곳에 홀로
-                            앉아 있다가 내가 사랑했던 사람의 연인을 만나게 되지는 않을까.
-                            목숨을 걸지 못해 누추해졌던 사랑이 그곳에서 마침내 빛나게 되지 않을까.
-                            우리가 한 사람을 사랑하고, 한 세월을 사랑하였으니, 우리가 이제 사랑이 되었네,
-                            말하게 되지는 않을까. 정지아는 그렇게 나를 내가 짐작하지 못할 시간 속으로 데려간다</p>
-                        <h5>정여울 (문학평론가)</h5>
-                        <p>정지아의 소설 속에서는 오직 오늘만 바라보고 살아가는 사람들의 참혹한 절망이
-                            꿈틀거리고, 오직 내일만 바라보고 살아가는 사람들의 식지 않은 희망이 들끓는다.
-                            나락이다 싶을 때마다 더 깊은 나락을 보여주는 생의 잔인함에 주눅 들지 않고,
-                            여전히 우리 앞에 끝나지 않은 희망의 불씨를 지피는 것이야말로 따스한 이야기꾼
-                            정지아의 변치 않는 매혹이다.</p>
+                        <div>
+                            <h5>김인숙 (소설가)</h5>
+                            <p>나는 정지아의 소설을 쫓아 산으로 달리고 들로만 달리는 게 아니라,
+                                내게 이미 지나간 시간이거나 혹은 아직 다가오지 않은 시간들
+                                속으로도 달린다. 나 또한 어느 날, 어느 산속 깊은 곳에 홀로
+                                앉아 있다가 내가 사랑했던 사람의 연인을 만나게 되지는 않을까.
+                                목숨을 걸지 못해 누추해졌던 사랑이 그곳에서 마침내 빛나게 되지 않을까.
+                                우리가 한 사람을 사랑하고, 한 세월을 사랑하였으니, 우리가 이제 사랑이 되었네,
+                                말하게 되지는 않을까. 정지아는 그렇게 나를 내가 짐작하지 못할 시간 속으로 데려간다</p>
+                        </div>   
+                        <div>
+                            <h5>정여울 (문학평론가)</h5>
+                            <p>정지아의 소설 속에서는 오직 오늘만 바라보고 살아가는 사람들의 참혹한 절망이
+                                꿈틀거리고, 오직 내일만 바라보고 살아가는 사람들의 식지 않은 희망이 들끓는다.
+                                나락이다 싶을 때마다 더 깊은 나락을 보여주는 생의 잔인함에 주눅 들지 않고,
+                                여전히 우리 앞에 끝나지 않은 희망의 불씨를 지피는 것이야말로 따스한 이야기꾼
+                                정지아의 변치 않는 매혹이다.</p>
+                        </div> 
                     </div>
                 </div>
-                <div class="publisher_review line">
+                <div id="publisher_review" class="line">
                     <div class="title">
                         <h4>출판사 서평</h4>
                     </div>
@@ -582,9 +589,10 @@
                             천형인 양, 운명인 양, 차라리 습관인 양 견디고 살아간다. 그 ‘평범한 비범함’이야말로 이 참혹한 세상을 끝내 포기하지 않고 건너가게 만드는, 우리가 매일매일
                             마주치면서도 무심히 스쳐 지나가는 일상의 기적이다. 그리고 거기서 그치지 않고 그 힘없고 빽 없는 사람들이 미운 구석, 다른 구석 티격태격 보듬고 살아가며 만들어내는
                             불협화음을 넘어선 ‘연대의 진풍경’이야말로 정지아의 문학이 가슴 먹먹한 울림과 묵직한 감동을 주는 이유다.</p>
+                            <button class="infor_show"><span>펼치기</span><img src="subimg/row.png" alt="펼치기"></button>
                     </div>
                 </div>
-                <div class="basic line">
+                <div id="basic" class="line">
                     <div class="title">
                         <h4>기본정도</h4>
                     </div>
@@ -613,7 +621,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="review">
+                <div id="review">
                     <div class="title">
                         <h4>Klover 리뷰 (7)</h4>
                         <p>*구매 후 리뷰 작성 시, e교환권 200원 적립</p>
@@ -844,7 +852,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="return introduce">
+                <div id="return" class="introduce">
                     <div class="title">
                         <h4>교환/반품/품절 안내</h4>
                     </div>
@@ -889,8 +897,8 @@
                     </div>
                 </div>
             </div>
-            <div class="content_right">
-                <div class="push">
+            <div id="content_right">
+                <div id="push">
                     <div class="title">
                         <h4>추천이벤트</h4>
                         <p><button>더보기></button></p>
@@ -927,7 +935,7 @@
                         </script>
                     </div>
                 </div>
-                <div class="best ranking">
+                <div id="best" class="ranking">
                     <div class="title">
                         <h4>이 분야의 베스트</h4>
                         <p><button>더보기></button></p>
@@ -992,10 +1000,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="ad">
+                <div id="ad">
                     <a href="#"><img src="subimg/ad.png" alt="이 책? 저 책? 스펙비교로 고민 끝!"></a>
                 </div>
-                <div class="tnew ranking">
+                <div id="tnew" class="ranking">
                     <div class="title">
                         <h4>이 분야의 신간</h4>
                         <p><button>더보기></button></p>
@@ -1069,7 +1077,7 @@
                 <p>총 상품 금액</p>
                 <h2>14,400원</h2>
             </div>
-            <div class="howmay">
+            <div class="howmany">
                 <div>
                     <button class="minus"><img src="subimg/minus.png" alt="수량감소"></button>
                     <input type="number" value="1" title="수량">

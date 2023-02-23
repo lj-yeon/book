@@ -2,7 +2,7 @@
         <div>
             <h1><a href="index.html"><img src="img/logo.png" alt="교보문고"></a></h1>
             <div class="search">
-                <select name="serch_op" id="serch_op">
+                <select name="search_op" id="search_op">
                     <option value="">통합검색</option>
                     <option value="">교보문고</option>
                     <option value="">eBook</option>

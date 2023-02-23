@@ -9,7 +9,7 @@ $(document).ready(function () {
     })
 
         .done(function (msg) {
-            var writer = $('.writer .writerbook>div')
+            var writer = $('#writer .writerbook>div')
             for (var i = 0; i < writer.length; i++) {
                 $(writer).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                 $(writer).eq(i).find('h5').html(msg.documents[i].title);
@@ -26,7 +26,7 @@ $(document).ready(function () {
         })
     
             .done(function (msg) {
-                var best = $('.content_right .best ul li')
+                var best = $('#content_right #best ul li')
                 for (var i = 0; i < best.length; i++) {
                     $(best).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                     $(best).eq(i).find('h5').html(msg.documents[i].title);
@@ -50,7 +50,7 @@ $(document).ready(function () {
             })
         
                 .done(function (msg) {
-                    var tnew = $('.content_right .tnew ul li')
+                    var tnew = $('#content_right #tnew ul li')
                     for (var i = 0; i < tnew.length; i++) {
                         $(tnew).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                         $(tnew).eq(i).find('h5').html(msg.documents[i].title);
@@ -75,7 +75,7 @@ $(document).ready(function () {
             })
         
                 .done(function (msg) {
-                    var together = $('.together ul li')
+                    var together = $('#together ul li')
                     for (var i = 0; i < together.length; i++) {
                         $(together).eq(i).find('picture').html('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
                         $(together).eq(i).find('h5').html(msg.documents[i].title);
