@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    ///교환반품
+    $.get("book_text/return.txt", function (data) {
+        $(data).appendTo('#return')
+    })
 
     $.ajax({
         method: "GET",
