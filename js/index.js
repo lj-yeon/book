@@ -175,8 +175,6 @@ $(document).ready(function(){
         }
         var c_back=$('.casting ul li').eq(c_i).find('.play img:nth-of-type(2)').attr('src');
         var c_go='"'+'../'+c_back+'"';
-        console.log(c_back);
-        console.log(c_go);
 
         $('.casting ul li').eq(c_i).fadeIn().siblings().fadeOut();
         $('.casting').css({'background-image':`url(${c_go})`})
@@ -188,11 +186,8 @@ $(document).ready(function(){
             $(this).css({'opacity':'0.5'});
             c_i=$('.casting ul li').length-1
         }
-        console.log(c_i)
         var c_back=$('.casting ul li').eq(c_i).find('.play img:nth-of-type(2)').attr('src');
         var c_go='"'+'./'+c_back+'"';
-        console.log(c_back);
-        console.log(c_go);
 
        
         

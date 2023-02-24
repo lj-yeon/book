@@ -63,7 +63,7 @@
 }
 #contain .visual .visual_nav {
   position: relative;
-  z-index: 100;
+  z-index: 10;
   background: rgba(255, 255, 255, 0.9);
   height: 70px;
   line-height: 70px;
